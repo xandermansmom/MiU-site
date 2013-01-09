@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--Michele Laramore-->
+<!--Mobile Interfaces and Usability-->
+
+<html>
+<head>
+	<title>Add Item to Form</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="special occasion, reminder" />
+    <meta name="description" content="special occasion reminder app" />
+    <meta name="robots" content="index, follow" />
+	<meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <meta name="author" content="Michele Laramore" />
+    <script type='text/javascript' src='js/infinite-rotator.js'></script>		
+    <link href="stylesheet/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css"/>
+</head>
+
+    <body>
+    <header>
+        <h1>Special Occasion App</h1>
+    </header>
+    
+    <div>
+    	<form method = "get" action = "">
+    		<input type = "text" class = "search" placeholder = "Search..."/>
+            <button type="submit" class="search-submit">Submit</button>
+		</form>
+    </div>
+ 
+    <h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
+		<div id="rotating-item-wrapper">			<img src="images/birthday-cake.png" alt ="Birthday" class="rotating-item"  />
+     		<img src="images/heart-w-rose.png" alt="Anniversary" class="rotating-item" />
+			<img src="images/diploma.png"  alt="Graduation" class="rotating-item"/>     
+     		<img src="images/woman-and-buggie.png"  alt="Baby Shower" class="rotating-item" />
+       	   	<img src="images/xmas-tree.png" alt="Christmas" class="rotating-item" />
+        </div>
+              		
+    
+    <!--Create div id name and format in CSS file-->
+     <div id = "accordian">
+    	<h2 class = "browse">Browse Categories:</h2>
+        <!--Create ul class name and format in CSS file-->
+        <ul class="sublinks">
+          <li>
+              <a href="notfound.html" id="launch_link">Spend</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Occasion</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Sex</a>
+          <li>
+              <a href="notfound.html" class="switch_screen">State</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Last Name</a> 
+          </li>
+        </ul>   
+    </div>  
+    
+   <div id = "add">
+    	<a href="additem.html">
+		<img src="images/button.gif" alt="Add Special Occasion"></a>
+    </div>
+    
+
+</body>    
+
+
+    
+
