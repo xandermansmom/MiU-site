@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--Michele Laramore-->
+<!---->
+<!---->
+<html>
+<head>
+	<title>Add Item to Form</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="special occasion, reminder" />
+    <meta name="description" content="special occasion reminder app" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <meta name="author" content="Michele Laramore" />
+    <link href="stylesheet/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type = "text/javascript">
+		$ (function() {
+			setInterval ("rotateImages()", 2000);
+		});
+		
+		function rotateImages(){
+			var curPhoto = $("cta div.current");
+			var nxtPhoto = curPhoto.next();
+			if (nxtPhoto == 0)
+				nxtPhoto =$("#curPhoto div:first");
+							
+			curPhoto.removeClass('current').addClass('previous');
+			nxtPhoto.css({  opacity: 0.0  }).addClass('current').animate({  opacity: 1.0}, 1000, 
+			function() {
+				curPhoto.removClass('previous');
+			});
+		}
+		</script>
+</head>
+    <body>
+    <header>
+    <div class="box">
+        <h1>Special Occasion App</h1>
+    </div>
+    </header>
+    
+    <div>
+    	<form method = "get" action = "">
+    		<input type = "text" class = "search" placeholder = "Search..."/>
+            <button type="submit" class="search-submit">Submit</button>
+		</form>
+    </div>
+    
+    <div id="cta">
+    	<div class="current">
+        	<a href ="images/cta_Birthday.jpg" width="400" height="400" alt="Birthday" class="gallery"/>            
+        </div>
+        <div>
+		 	<a href ="images/cta_Anniversary.jpg" alt = "Anniversary" width ="400" height="400" class = "gallery"/>        
+        </div>
+        <div>
+       	   <a href ="images/cta_Graduation.jpg" alt = "Graduation" width ="400" height ="400" class = "gallery"/>
+        </div>
+        <div>
+       	   <a href ="images/cta_BabyShower.jpg" alt = "Baby Shower" width ="400" height ="400" class = "gallery"/>
+        </div>
+        <div>
+       	   <a href ="images/cta_Christmas.jpg" alt = "Christmas" width ="400" height "400" class = "gallery"/>
+        </div>
+    </div>
+    
+    <!--Create div id name and format in CSS file-->
+     <div id = "accordian">
+    	<h2 class = "browse">Browse Categories:</h2>
+        <!--Create ul class name and format in CSS file-->
+        <ul class="sublinks">
+          <li>
+              <a href="notfound.html" id="launch_link">Spend</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Occasion</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Sex</a>
+          <li>
+              <a href="notfound.html" class="switch_screen">State</a>
+          </li>
+          <li>
+              <a href="notfound.html" class="switch_screen">Last Name</a> 
+          </li>
+        </ul>   
+    </div>  
+    
+    	<a href="additem.html">
+		<img src="images/button.gif" alt="Add Special Occasion"></a>
+    </body>
+    
+
