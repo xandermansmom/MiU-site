@@ -47,15 +47,6 @@ h2 {
 	 left: 35%;
 	}
 	
-h2.call {
-	position: relative;
-	margin-left: -10%;
-	margin-top: 15%;
-	color: #000;
-	padding-left: 5%;
-	font-size: 36px;
-	width: 50%;
-	}
 	
 .search {
 	float: right;
@@ -70,29 +61,40 @@ h2.call {
 	}
 	
 .rotating-item {
-	position: absolute;
-	top: 0;
-	left: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 	width: 20%;
-	margin-left: 10%;
-	padding-right: 10px;
+	margin-left: 8%;
+	padding-right: 20px;
 	margin-top: 15%;
 }
 
+h2.call {
+	position: relative;
+	margin-left: -10%;
+	margin-top: 10%;
+	color: #000;
+	padding-left: 5%;
+	font-size: 36px;
+	width: 50%;
+	}
+
 #add {
   	position: relative;
-	margin-top: -500px;
+	margin-top: -450px;
 	margin-left: 150px;	
 	}	
 		
 .browse {
- 	margin-top:45%;
+ 	margin-top:25%;
 	margin-left: -350px;
 }
 
 ul.sublinks {
 	padding: 0;
-  	margin: 325px 0 5px 140px;	
+  	margin: 225px 0 5px 140px;	
 	}
 
 ul.sublinks li {
@@ -301,7 +303,7 @@ input[type=button] {
 	
 .search-submit {
 	float: right;
-	margin-top: 8px;
+	margin-top: 12px;
 	margin-right: -290px;
 	}
 
@@ -332,8 +334,7 @@ h2.call {
 	margin-top: 125px;
 	margin-left: 20px;
 	width: 300px;
-	}
-	
+	}	
 	
 #add {
   	position: relative;
@@ -342,7 +343,7 @@ h2.call {
 	}
 	
 .browse {
- 	margin-top:250px;
+ 	margin-top:260px;
 	margin-left: -75px;
 	
 }	
@@ -350,6 +351,15 @@ h2.call {
 ul.sublinks {
 	padding: 0;
   	margin: 125px 0 0 25px;	
+	}
+	
+#error img{
+	background: url(images/dead-end.png);
+    display: block;
+    margin: -100px 0 0 -125px;
+    margin-right: auto;
+	height: 250px;
+	width: 250px;
 	}
 	
 
