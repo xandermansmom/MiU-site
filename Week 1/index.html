@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <!--Michele Laramore-->
+<<<<<<< HEAD
 <!--Mobile Interfaces and Usability-->
 
+=======
+<!---->
+<!---->
+>>>>>>> origin/gh-pages
 <html>
 <head>
 	<title>Add Item to Form</title>
@@ -9,6 +14,7 @@
     <meta name="keywords" content="special occasion, reminder" />
     <meta name="description" content="special occasion reminder app" />
     <meta name="robots" content="index, follow" />
+<<<<<<< HEAD
 	<meta name="viewport" content="user-scalable=no, width=device-width"/>
     <meta name="author" content="Michele Laramore" />
     <script type='text/javascript' src='js/infinite-rotator.js'></script>		
@@ -19,6 +25,36 @@
     <body>
     <header>
         <h1>Special Occasion App</h1>
+=======
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <meta name="author" content="Michele Laramore" />
+    <link href="stylesheet/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type = "text/javascript">
+		$ (function() {
+			setInterval ("rotateImages()", 2000);
+		});
+		
+		function rotateImages(){
+			var curPhoto = $("cta div.current");
+			var nxtPhoto = curPhoto.next();
+			if (nxtPhoto == 0)
+				nxtPhoto =$("#curPhoto div:first");
+							
+			curPhoto.removeClass('current').addClass('previous');
+			nxtPhoto.css({  opacity: 0.0  }).addClass('current').animate({  opacity: 1.0}, 1000, 
+			function() {
+				curPhoto.removClass('previous');
+			});
+		}
+		</script>
+</head>
+    <body>
+    <header>
+    <div class="box">
+        <h1>Special Occasion App</h1>
+    </div>
+>>>>>>> origin/gh-pages
     </header>
     
     <div>
@@ -27,6 +63,7 @@
             <button type="submit" class="search-submit">Submit</button>
 		</form>
     </div>
+<<<<<<< HEAD
  
     <h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
 		<div id="rotating-item-wrapper">			<img src="images/birthday-cake.png" alt ="Birthday" class="rotating-item"  />
@@ -36,6 +73,26 @@
        	   	<img src="images/xmas-tree.png" alt="Christmas" class="rotating-item" />
         </div>
               		
+=======
+    
+    <div id="cta">
+    	<div class="current">
+        	<a href ="images/cta_Birthday.jpg" width="400" height="400" alt="Birthday" class="gallery"/>            
+        </div>
+        <div>
+		 	<a href ="images/cta_Anniversary.jpg" alt = "Anniversary" width ="400" height="400" class = "gallery"/>        
+        </div>
+        <div>
+       	   <a href ="images/cta_Graduation.jpg" alt = "Graduation" width ="400" height ="400" class = "gallery"/>
+        </div>
+        <div>
+       	   <a href ="images/cta_BabyShower.jpg" alt = "Baby Shower" width ="400" height ="400" class = "gallery"/>
+        </div>
+        <div>
+       	   <a href ="images/cta_Christmas.jpg" alt = "Christmas" width ="400" height "400" class = "gallery"/>
+        </div>
+    </div>
+>>>>>>> origin/gh-pages
     
     <!--Create div id name and format in CSS file-->
      <div id = "accordian">
@@ -59,6 +116,7 @@
         </ul>   
     </div>  
     
+<<<<<<< HEAD
    <div id = "add">
     	<a href="additem.html">
 		<img src="images/button.gif" alt="Add Special Occasion"></a>
@@ -68,5 +126,10 @@
 </body>    
 
 
+=======
+    	<a href="additem.html">
+		<img src="images/button.gif" alt="Add Special Occasion"></a>
+    </body>
+>>>>>>> origin/gh-pages
     
 
