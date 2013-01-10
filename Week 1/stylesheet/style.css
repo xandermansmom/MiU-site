@@ -364,6 +364,11 @@ ul.sublinks {
 	
 
 fieldset {
-	width: 100%;	
+	width: 325px;	
 	}	
+	
+#comments {  
+    width: 75%;
+	height: 75%;    
+    } 	
 }
