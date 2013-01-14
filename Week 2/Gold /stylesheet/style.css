@@ -47,19 +47,6 @@ h2 {
 	 left: 35%;
 	}
 	
-	
-.search {
-	float: right;
-	margin-top: 6px;	
-	margin-right: 200px;
-}
-	
-.search-submit {
-	float: right;
-	margin-top: 12px;
-	margin-right: -300px;
-	}
-	
 .rotating-item {
     display: none;
     position: absolute;
@@ -85,25 +72,26 @@ h2.call {
   	position: relative;
 	margin-top: -450px;
 	margin-left: 150px;	
-	}	
+	}
+	
+.ui-input-text ui-body-c {
+	margin-top: 75%;
+	margin-left:-350px;	
+}
 		
-.browse {
+li.list-divider {
  	margin-top:25%;
 	margin-left: -350px;
 }
 
-ul.sublinks {
-	padding: 0;
-  	margin: 225px 0 5px 140px;	
+.ui-btn-inner .ui-corner-bottom	{
+	
 	}
 
-ul.sublinks li {
-	list-style-type: none;	
-  	padding: 10px;
-	}
 	
-ul.sublinks li:last-child {
-	padding-bottom: 50px;
+.ui-li-icon {
+	max-height: 40px !important;
+	max-width: 40px !important
 	}
 
 p {

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--Michele Laramore-->
+<!--Mobile Interfaces and Usability-->
+
+<html>
+<head>
+	<title>Add Item to Form</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="special occasion, reminder" />
+    <meta name="description" content="special occasion reminder app" />
+    <meta name="robots" content="index, follow" />
+	<meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <meta name="author" content="Michele Laramore" />
+    	
+    <!--Stylesheets-->
+    <link href="stylesheet/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css"/>
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on">
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="/js/libs/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+	<script type="text/javascript" src="js/infinite-rotator.js"></script>
+</head>
+
+    <body>
+    <div data-role="page" id="home">
+    
+	<header>
+    
+	<div>
+		<h1>Special Occasion App</h1>
+	</div>
+    
+	</header>
+
+    
+ 
+     <!--Filter Search-->
+   <form method ="get"  action= "">
+    
+ 	<!--Call to Action-->
+    <h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
+		<div>			
+        	<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
+     		<img class="rotating-item" src="images/heart-w-rose.gif" alt="Anniversary" />
+			<img class="rotating-item" src="images/diploma.gif"  alt="Graduation"/>     
+     		<img class="rotating-item" src="images/woman-and-buggie.gif"  alt="Baby Shower" />
+       	   	<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
+        </div>
+        
+        <div id = "add">
+    	<a href="additem.html">
+		<img src="images/button.gif" alt="Add Special Occasion"></a>
+    </div>
+    
+  
+    
+   <!-- List Inlay -->
+        <div data-role="collapsible-set" data-collapsed="true" data-filter="true">
+		<div class="ui-bar ui-bar-d" data-role="header">Browse Categories </div>
+		<div data-role="collapsible" data-collapsed="true"  data-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+			
+            <h3>Browse by Spend</h3>
+            				<ul data-role="listview" class="list">
+                               		<li> <img src="images/spend.gif" alt = "spend" class ="ui-li-icon"/></li>
+            						<li>Spend: $100</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Date: 12/25/2012</li>
+                                </ul>
+                                
+                               
+                               <ul>
+                               		<li> <img src="images/spend.gif" alt="spend" class ="ui-li-icon"/></li>
+            						<li>Spend: $20</li>
+            						<li>Last Name: Side</li>
+                               		<li>First Name: Cliff</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Date: 07/06/1982</li>
+                               </ul>
+         </div>
+         
+         <div data-role="collapsible" data-collapsed="true" data-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+
+         						  <h3>Browse by Occasion</h3>	
+            				<ul data-role="listview" data-filter="true" class="list">
+                                	<li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+                                	<li>Occasion: Christmas</li>
+                                	<li>First Name: Chris</li>
+                                	<li>Last Name: Jordan</li>
+									<li>Date: 12/15/2012</li>
+                                	<li>Spend: $100</li>
+                                </ul>
+						
+								
+                                <ul>
+                                <li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+                                	<li>Occasion: Birthday</li>
+                                	<li>First Name: McPhalen</li>
+                                	<li>Last Name: Shirley</li>
+									<li>Date: 10/18/1946</li>
+                                	<li>Spend: $50</li>
+                                </ul>
+						
+		</div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+			<h3>Browse by Sex</h3>
+            
+            					
+            				<ul data-role="listview" data-filter="true" class="list">
+                                	<li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+            						<li>Sex: Male</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Spend: $100</li>
+                                </ul>
+                                
+           
+                               <ul>
+                               		<li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+            						<li>Sex: Female</li>
+            						<li>Last Name: McPhalen</li>
+                               		<li>First Name: Shirley</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Spend: $50</li>
+                               </ul>
+			
+		</div>
+        
+       <div data-role="collapsible" data-collapsed="true" data-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+			<h3>Browse by State</h3>
+            					
+            				<ul data-role="listview" data-filter="true" class="list">
+                               		<li> <img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>
+            						<li>State: Texas</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Date: 12/25/2012</li>
+                                </ul>
+                                
+                              
+                               <ul class="list">
+                               		<li><img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>	
+            						<li>State: Michigan</li>
+            						<li>Last Name: Collier</li>
+                               		<li>First Name: Doreen</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Date: 10/11/2012</li>
+                               </ul>
+		</div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+			<h3>Browse by Last Name</h3>
+            				
+            					
+            				<ul data-role="listview" data-filter="true" class="list">
+                                	<li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+                                	<li>Last Name: Jordan</li>
+            						<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>
+                                	<li>Date: 12/25/2012</li>
+                                	<li>Spend: $100</li>
+                                </ul>
+                                
+                               
+                               <ul>
+                               		<li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+            						<li>Last Name: McPhalen</li>
+            						<li>First Name: Shirley</li>
+									<li>Occasion: Birthday</li>
+                                	<li>Date: 10/18/1946</li>
+                                	<li>Spend: $100</li>
+                               </ul> 
+          	</div>                                     
+    </div>
+    
+     <!--footer-->
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+					<li><a href="" data-icon="star">Gold</a></li>
+					<li><a href="" data-icon="gear">Bronze</a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <!--About Page-->
+		<div data-role="page" id="about" data-add-back-btn="true" data-theme="d">
+			<div data-role="header" data-position="fixed">
+				<div data-role="content">
+					<h2>Contact:
+					<h3>
+					<p>
+						Michele Laramore
+					</p>
+					<p>
+						E-mail: xandermansmom@fullsail.edu
+					</p>
+					<h2>Credit</h2>
+					</h3>
+					Customizing footer bar</h3>
+					<p>
+						<a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/mobile/entry/create_custom_jquery_mobile_themes?lang=en">Create Custom Query Themes</a>
+					</p>
+					<p>
+						<a href="http://jqueryui.com/themeroller/">Themeroller</a>
+					</p>
+				</div>
+			</div>
+		</div>
+        
+        <!--Newstream Page-->
+		<div data-role="page" id="newstream" data-add-back-btn="true" data-theme="d">
+			<div data-role="header" data-position="fixed">
+				<div data-role="content" id="newstream">
+				</div>
+			</div>
+		</form>
+<!--Javascript sources-->
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</body>
+        
+    
+   
+    
+
+ 
+
+
+    
+

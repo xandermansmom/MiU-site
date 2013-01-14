@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Michele Laramore-->
+<!--MiU-->
+<!--Project 2 Bronze-->
+<!---->
+
+<html>
+<head>
+<title>Add Item to Form</title>
+<meta charset="utf-8"/>
+<meta name="keywords" content="special occasion, reminder"/>
+<meta name="description" content="special occasion reminder app"/>
+<meta name="robots" content="index, follow"/>
+<meta name="viewport" content="user-scalable=no, width=device-width"/>
+<meta name="author" content="Michele Laramore"/>
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="stylesheet/style.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css"/>
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on">
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects and infinite-rotator and ajax library which enables rotating images used in my CTA-->
+<script src="/js/libs/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+<script type="text/javascript" src="js/infinite-rotator.js"></script>	
+
+</head>
+<body>
+<div data-role="page" id="home">
+<header>
+<div>
+	<h1>Special Occasion App</h1>
+</div>
+</header>
+<!--Filter Search-->
+
+	<form method ="get" action = " ">
+		
+    
+	<!--Call to Action-->
+	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
+		<div>			
+        	<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
+     		<img class="rotating-item"src="images/heart-w-rose.gif" alt="Anniversary" />
+			<img class="rotating-item"src="images/diploma.gif"  alt="Graduation"/>     
+     		<img class="rotating-item"src="images/woman-and-buggie.gif"  alt="Baby Shower" />
+       	   	<img class="rotating-item"src="images/xmas-tree.gif" height="250px" width="200px" alt="Christmas" />
+        </div>
+    
+	<!--Drill down list-->
+	
+    	<ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme ="d" data-theme="d">
+			<li data-role="list-divider">Browse Categories</li>
+            <li data-role="button" data-icon="arror-r" data-iconpos="right">
+			<img src="images/spend.gif" class="ui-li-icon"  alt=""/>
+			<h3>Spend</h3>
+			<ul>
+				<li>
+				<a href ="#spend"></a>
+				</li>
+			</ul>
+			<li data-role="button" data-inline="true" data-icon="arror-r" data-iconpos="right">
+			<img src="images/gift.gif" class= "ui-li-icon"  alt=""/>
+			<h3>Occasion</h3>
+			<ul>
+				<li>
+				<a href="#occasion"></a>
+				</li>
+			</ul>
+			<li data-role="button" data-inline="true" data-icon="arror-r" data-iconpos="right">
+			<img src="images/sex.gif" class ="ui-li-icon"  alt=""/>
+			<h3>Sex</h3>
+			<ul>
+				<li>
+				<a href="#sex"></a>
+				</li>
+			</ul>
+			<li data-role="button"  data-inline="true" data-icon="arror-r" data-iconpos="right">
+			<img src="images/state.gif" class= "ui-li-icon"  alt=""/>
+			<h3>State</h3>
+			<ul>
+				<li>
+				<a href="#state"></a>
+				</li>
+			</ul>
+			<li data-role="button"  data-inline="true" data-icon="arror-r" data-iconpos="right">
+			<img src="images/lName.gif" class ="ui-li-icon"  alt=""/>
+			<h3>Last Name</h3>
+			<ul>
+				<li>
+				<a href="#lName"></a>
+				</li>
+			</ul>
+	
+        
+	<!--footer-->
+	<div data-role="footer" data-position="relative" data-id="samefooter" data-theme="d">
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#about" data-icon="info">About</a></li>
+				<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				<li><a href="" data-icon="star">Gold</a></li>
+				<li><a href="" data-icon="gear">Bronze</a></li>
+			</ul>
+		</div>
+	</div>
+</form>
+
+<!--Javascript sources-->
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</body>

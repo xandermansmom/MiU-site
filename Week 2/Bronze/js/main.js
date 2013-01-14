@@ -300,7 +300,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		getEmail.style.border ="1px solid black";
 		getTelephone.style.border = "1px solid black";
 		getState.style.border = "1px solid black";
-		getZip.style.border = "1px solid blak";
+		getZip.style.border = "1px solid black";
 		getOccasion.style.border = "1px solid black";
 		
 		//Get Error messages

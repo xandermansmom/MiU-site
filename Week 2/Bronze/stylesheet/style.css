@@ -47,19 +47,11 @@ h2 {
 	 left: 35%;
 	}
 	
-	
-.search {
-	float: right;
-	margin-top: 6px;	
-	margin-right: 200px;
-}
-	
-.search-submit {
-	float: right;
-	margin-top: 12px;
-	margin-right: -300px;
+.ui-li-heading {
+	margin-left: 30%;
+	padding-left: 10px;
 	}
-	
+		
 .rotating-item {
     display: none;
     position: absolute;
@@ -85,12 +77,22 @@ h2.call {
   	position: relative;
 	margin-top: -450px;
 	margin-left: 150px;	
-	}	
+	}
+	
+.ui-listview .ui-li-icon {
+  max-height: 40px !important;
+  max-width: 40px !important;
+	}
+
+.ui-input-text ui-body-c {
+	margin-top: 75%;
+	margin-left:-350px;	
+	}
 		
-.browse {
- 	margin-top:25%;
-	margin-left: -350px;
-}
+.ui-li .ui-li-divider .ui-bar-d .ui-corner-top{
+ 	margin-top:30% !important;
+	margin-left: -350px !important;
+	}
 
 ul.sublinks {
 	padding: 0;
@@ -104,6 +106,11 @@ ul.sublinks li {
 	
 ul.sublinks li:last-child {
 	padding-bottom: 50px;
+	}
+	
+.ui-li-icon {
+	max-height: 40px;
+	max-width: 40px
 	}
 
 p {
