@@ -34,11 +34,13 @@
 </head>
 <body>
 <div data-role="page" id="home">
-<header>
-<div>
-	<h1>Special Occasion App</h1>
-</div>
-</header>
+
+	<header>
+		<div data-role="header" data-position="fixed">
+			<h1>Special Occasion App</h1>
+		</div>
+	</header>
+    
 <!--Filter Search-->
 
 	<form method ="get" action = " ">
@@ -53,7 +55,12 @@
      		<img class="rotating-item"src="images/woman-and-buggie.gif"  alt="Baby Shower" />
        	   	<img class="rotating-item"src="images/xmas-tree.gif" height="250px" width="200px" alt="Christmas" />
         </div>
-    
+        
+    	<div id = "add">
+    		<a href="additem.html">
+			<img src="images/button.gif" alt="Add Special Occasion"></a>
+    	</div>
+        
 	<!--Drill down list-->
 	
     	<ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme ="d" data-theme="d">
@@ -101,7 +108,7 @@
 	
         
 	<!--footer-->
-	<div data-role="footer" data-position="relative" data-id="samefooter" data-theme="d">
+	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" data-iconpos="top">
 			<ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
@@ -112,6 +119,7 @@
 			</ul>
 		</div>
 	</div>
+  </div>
 </form>
 
 <!--Javascript sources-->

@@ -43,7 +43,7 @@ h1 {
 h2 {
 	 color: #56456e;
 	 position: absolute;
-	 top: 30%;
+	 top: 5%;
 	 left: 35%;
 	}
 	
@@ -52,25 +52,25 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-	width: 20%;
+	height: 20%;
+	width: 25%;
 	margin-left: 8%;
 	padding-right: 20px;
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 h2.call {
 	position: relative;
 	margin-left: -10%;
-	margin-top: 10%;
+	margin-top: 12%;
 	color: #000;
-	padding-left: 5%;
-	font-size: 36px;
-	width: 50%;
+	padding-left: 15%;
+	width: 35%;
 	}
 
 #add {
   	position: relative;
-	margin-top: -450px;
+	margin-top: 25%;
 	margin-left: 150px;	
 	}
 	
@@ -78,9 +78,10 @@ h2.call {
 	margin-top: 75%;
 	margin-left:-350px;	
 }
-		
-li.list-divider {
- 	margin-top:25%;
+	
+.ui-bar ui-bar-d ui-header .ui-bar-a" {
+	position: relative;
+ 	margin-top:5%;
 	margin-left: -350px;
 }
 
@@ -282,83 +283,14 @@ input[type=button] {
     }  
 
 @media screen and (max-device-width: 600px){
-    /* All iPhone only CSS goes here*/
-
-.search {
-	float: right;
-	margin-right:-100px;
-	}
 	
-.search-submit {
-	float: right;
-	margin-top: 12px;
-	margin-right: -290px;
-	}
-
-
-h1 { 
-	color: #736389;
-	margin-left: 75px;
-	width: 100%;
-	text-align: center;
-	}
-	
-	
-.rotating-item {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 35%;
-	margin-left: 10%;
-	padding-right: 10px;
-	margin-top: 45%;
-	height: 150px;
-	width:150px;
-}
-
 h2.call {
+	font-size: 15px;
+	position: relative;
+	margin-left: -10%;
+	margin-top: 25%;
 	color: #000;
-	font-size: 24px;
-	padding-left: 30px;
-	padding-right: 40px;
-	margin-top: 125px;
-	margin-left: 40px;
-	width: 300px;
-	}	
-	
-#add {
-  	position: relative;
-	margin-top: -375px;
-	margin-left: 20%;
+	padding-left: 15%;
+	width: 180px;
 	}
-	
-.browse {
- 	margin-top:260px;
-	margin-left: -75px;
-	
-}	
-	
-ul.sublinks {
-	padding: 0;
-  	margin: 125px 0 0 25px;	
-	}
-	
-#error img{
-	background: url(images/dead-end.png);
-    display: block;
-    margin: -100px 0 0 -125px;
-    margin-right: auto;
-	height: 250px;
-	width: 250px;
-	}
-	
-
-fieldset {
-	width: 325px;	
-	}	
-	
-#comments {  
-    width: 75%;
-	height: 75%;    
-    } 	
 }
