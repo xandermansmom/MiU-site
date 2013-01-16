@@ -294,11 +294,11 @@ input[type=button] {
 
 @media screen and (max-device-width: 600px){
 	
+	
 h2.call {
 	font-size: 15px;
-	position: absolute;
-	margin-left: -10%;
-	margin-top: 30px;
+	margin-left: -20px;
+	margin-top: 40px;
 	color: #000;
 	padding-left: 15%;
 	width: 180px;
@@ -309,12 +309,21 @@ h2.call {
     position: absolute;
     top: 0;
     left: 0;
-	height: 50px;
-	width:75px;
+	height: 100px;
+	width:100px;
 	margin-left: 8%;
 	padding-right: 20px;
-	margin-top: 70px;
+	margin-top: 85px;
 }
+#add {
+	margin-top: 25px;
+	margin-left: 10px;	
+	}
+
+ .ui-header {
+	margin-left: 50px;
+	}
+	
 	
 	
  h1.ui-title {

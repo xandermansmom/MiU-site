@@ -10,7 +10,7 @@ var json = {
 		"states":			 ["State:", "California" ],
 		"zip":				 [ "Zip:", "87654"],
 		"occasions":		 ["Occasion:", "Birthday" ],
-		"date":				 ["Date:", "10-18-1972" ],
+		"date":				 ["Date:", "10-14-1972" ],
 		"sex":				 ["Sex:", "Male"],
 		"spend":			 ["Spend:", "100"],
 		"comments":			 ["Comments:", "Gift card" ]	
@@ -256,7 +256,7 @@ var json = {
 		"states":			 ["State:", "California"],
 		"zip":				 [ "Zip:", "93001"],
 		"occasions":		 ["Occasion:", "Baby Shower"],
-		"date":				 ["Date:", "12-10-11"],
+		"date":				 ["Date:", "12-10-13"],
 		"sex":				 ["Sex:", "Female" ],
 		"spend":			 ["Spend:", "15"],
 		"comments":			 ["Comments:", "Bottles" ]	
