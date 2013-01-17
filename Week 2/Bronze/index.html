@@ -28,7 +28,7 @@
 <meta http-equiv="cleartype" content="on">
 
 <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects and infinite-rotator and ajax library which enables rotating images used in my CTA-->
-<script src="/js/libs/modernizr.custom.min.js"></script>
+<script src="js/libs/modernizr.custom.63175.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
 <script type="text/javascript" src="js/infinite-rotator.js"></script>	
 
@@ -57,13 +57,14 @@
        	   	<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
         </div>
         
-        <a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
-  
-        
+        <div id="add">
+        	<a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
+  		</div>
+        <br/>
 	<!--Drill down list-->
     
    <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
-     
+     		<br/>
         	<li data-role="list-divider">Browse Categories</li>
    
  			<li><a href ="#spend" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Spend</a></li>
@@ -293,44 +294,201 @@
      </div>
 
         <!--About Page-->
-
-        
 			<div data-role="page" id="about" data-add-back-btn="true">
+            <br/>
+            <header>
+				<div data-role="header" data-position="fixed">
+					<h1>About</h1>
+				</div>
+			</header>
             
+             <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
+     		<br/>
+
+   
+ 			<li><a href ="#contact" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Contact</a></li>
+       
+       		<li><a href="#goldApp" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Gold App</a></li>    
+		
+        	<li><a href="#bronzeGH" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Bronze gh-pages</a></li>
+            
+            <li><a href="#goldGH" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Gold gh-pages</a></li>
+            
+            <li><a href="#repo" data-transition="slide" data-icon="arrow-r" data-iconpos="right" data-theme="a">Github Repo</a></li>
+            
+            <li><a href ="#hints" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Hints, Tips, and Coding Advice</a></li>
+       
+       		<li><a href="#rotatingImages" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Rotating Images</a></li>    
+		
+        	<li><a href="#slider" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">HTML Slider Code for Firefox</a></li>
+            
+      </ul>
+            
+           <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div> 
+      </div> 
         <header>
 			<div data-role="header"  data-position="fixed">
 				<h1>Special Occasion App</h1>
 			</div>
 		</header>
-            
-		 	<h3>Contact</h3>
+        
+  		<div data-role="page" id="contact" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Contact</h1>
+        </div>		 	
             				<ul>
                                	<li><span>Name:</span>  Michele Laramore</li>
             					<li><span>E-mail:</span> xandermansmom@fullsail.edu</li>
             					<li><span>Phone:</span> (254) 366-0084</li>
                            </ul>
+         <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div> 
+     </div>
+         <div data-role="page" id="goldApp" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Gold App</h1>
+        </div>
+    			<p id="gApp"><a href="http://xandermansmom.github.com/MiU-site/Week%202/Gold%20/" target="_blank">Gold App</a></p>
+        	  <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div> 	
+        <div data-role="page" id="bronzeGH" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Bronze gh-pages</h1>
+            
+            		<p id="bronze"><a href="https://github.com/xandermansmom/MiU-site/tree/master/Week%202/Bronze" target="_blank">Bronze gh-pages</a></p>
+        </div>
+      </div>		 	             
+           
+             <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div> 
+        
+        <div data-role="page" id="goldGH" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Gold gh-pages</h1>
+        </div>	
+        
+        		<p id="gold"><a href="https://github.com/xandermansmom/MiU-site/tree/master/Week%202/Gold%20" target="_blank" >Gold gh-pages</a>	 	
+           
+             <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+      </div> 
+        <div data-role="page" id="repo" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Github Repo</h1>
+        </div>
+     	 	<p id="ghRepo"><a href="https://github.com/xandermansmom/MiU-site" target="_blank">Github Repo</a>
           
-			
-           		<h3>Hints, Tips, and Coding Advice</h3>
+			  <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+      </div> 
+        <div data-role="page" id="hints" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Hints, Tips and Coding Advice</h1>
+        </div>	
+        	 	
            					<ul>
                     		   <li><span>Instructor:</span> Mrs. Robin Alarcon</li>
                                <li><span>Coding Buddy:</span> Josh Wilcox</li>
                                <li><span>Online Assistance:</span> FSO MDVBS Facebook Group</li>
                             </ul>
+        </div>
          
-                      
-     			<h3>Rotating Images Code</h3>
+                  <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div> 
+
+        <div data-role="page" id="rotatingImages" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Rotating Images Code</h1>
+        </div>		 	  
             				<ul>
                             	<li><span>Code Source:</span> TrendMedia Technologies, Inc., Brian McNitt.</li>
                                 <li><span>Website:</span> <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/" target=		                                 "_blank">Trendmedia</a></li>
                            	</ul>
-          
-          
-	  			<h3>HTML5 Slider Code for for Firefox 4 and up</h3>
+            <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+      </div> 
+        <div data-role="page" id="slider" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Slider Code for Firefox</h1>
+        </div>		 	  
                 			<ul>
                     			<li><span>Code Source:</span> Frank Yan</li>
                     			<li><span>Website:</span> <a href="https://github.com/fryn/html5slider" target="_blank">Frank Yan's Github HTML5 Slider                                 Source Code</a></li>
-                            </ul>  
+                            </ul> 
                 
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -343,17 +501,17 @@
 				</ul>
 			</div>
 		</div>
-    </div>
+      </div>
         
         <!--Newstream Page-->
-
 		<div data-role="page" id="newstream" data-add-back-btn="true">
                    
 			<div data-role="header"  data-position="fixed">
 				<h1>Special Occasion App</h1>
 			</div>
-            
+       <br/>    
        <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
+       <br/>
 			<li><a href ="#currentMonth" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Current Month</a></li>
        
        		<li><a href="#nextMonth" data-transition="slide"  data-icon="arrow-r" data-iconpos="right" data-theme="a">Next Month</a></li>    
@@ -426,7 +584,7 @@
      <div data-role="header" data-position="fixed">
        	<h3>Next Month</h3>
      </div>   	
-            <p> No occasions this month!</p>
+            <p id ="noOcc"> No occasions this month!</p>
   
             
       <!--footer-->
@@ -473,7 +631,7 @@
        	<h3>April</h3>
       </div>
      
-       	<p> No occasions this month!</p>
+       	<p id="noOcc2"> No occasions this month!</p>
 
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -600,7 +758,7 @@
        		<h3>August</h3>
         </div>
         
-        			<p> No occasions this month!</p>
+        			<p id="noOcc3"> No occasions this month!</p>
                     
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -615,7 +773,7 @@
 		</div>
     </div>
      
-	 <div data-role="page" id="September" data-add-back-btn="true">
+	 <div data-role="page" id="september" data-add-back-btn="true">
      <div data-role="header" data-position="fixed">
        	<h3>September</h3>
 	</div>

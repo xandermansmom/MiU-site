@@ -17,27 +17,31 @@ body {
 	width: auto;
 	}
 
-.submit {
-  border: 1px solid #000000;
-  background-color: #FFFFFF;
-  padding: 2px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  cursor: default;
-	}
-		
-.dead {
-	position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	margin-top: -200px;
-	margin-left: -215px;
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+	height: 100px;
+	width:100px;
+	margin-left: 20px;
+	padding-right: 20px;
+	margin-top: 70px;
+}
+
+h2.call {
+	position: relative;
+	font-size: 15px;
+	margin-top: 40px;
+	color: #000;
+	padding-left: 25px;;
+	width: 180px;
 	}
 
 h1 { 
 	color: #736389;
-	text-align: center;
+	margin-left: 50px;
+	width: 350px;
 	}	
 
 h2 {
@@ -51,26 +55,6 @@ h2 {
 	color: #fff;
 	}
 	
-.rotating-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-	height: 300px;
-	width: 320px;
-	margin-left: 8%;
-	padding-right: 20px;
-	margin-top: 200px;
-}
-
-h2.call {
-	position: relative;
-	margin-left: -10%;
-	margin-top: 225px;
-	color: #000;
-	padding-left: 15%;
-	width: 35%;
-	}
 
 #add {
   	position: relative;
@@ -103,6 +87,39 @@ li span {
 .ui-li-icon {
 	max-height: 40px !important;
 	max-width: 40px !important
+	}
+
+	
+#spOcFieldset1, #spOcFieldset2 {
+	position: relative;
+	top: 30px;
+	padding-top: 10px;
+	width: 450px;
+	max-width: 90%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+    -moz-box-shadow:0px -5px 300px #270644;
+   -webkit-box-shadow:0px -5px 300px #270644;
+	}	
+
+#comments {
+	max-width: 300px;
+	}
+
+p#noOcc, p#noOcc2, p#noOcc3 {
+	margin-top: -225px;
+	margin-left: -300px;
+	}
+	
+p#gApp {
+	margin-top: -225px;
+	margin-left: -300px;
+	}
+	
+p#bronze, p#gold, p#ghRepo{
+	margin-top: -225px;
+	margin-left: -350px;
 	}
 
 p {
@@ -138,17 +155,6 @@ nav	a {
 
  a:active {
  	border: 2px inset;
-	}	
-
-fieldset{
-	position: relative;
-	top: 30px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	max-width: 90%;
-    -moz-box-shadow:0px -5px 300px #270644;
-   -webkit-box-shadow:0px -5px 300px #270644;
 	}	
 	
 legend {
@@ -291,38 +297,36 @@ input[type=button] {
     -webkit-border-radius: 5px;  
     -moz-border-radius: 5px;  
     }  
-
-@media screen and (max-device-width: 600px){
 	
-	
-h2.call {
-	font-size: 15px;
-	margin-left: -20px;
-	margin-top: 40px;
-	color: #000;
-	padding-left: 15%;
-	width: 180px;
-	}
-	
-.rotating-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-	height: 100px;
-	width:100px;
-	margin-left: 8%;
-	padding-right: 20px;
-	margin-top: 85px;
-}
+#about h3 {
+	margin-left: 50px;
+	}			
 
 #add {
 	margin-top: 25px;
 	margin-left: 10px;	
 	}
 	
- h1.ui-title {
-	width: 100%;
+#aboutPage h3 {
+	font-size: 16px; 
+	margin-top: 10px;
+	margin-left: 20px;
+	}
+		
+#aboutPage ul li {
+	font-size: 14px;
 	}
 
-}
+ h1.ui-title {
+	text-align: center;
+	width: 175px;
+	}
+	
+.ui-collapsible .ui-collapsible-inset .ui-collapsible-collapsed{
+	margin-left: 0px;
+	}
+	
+.ui-btn-text h3{
+	width: 300px;
+	}
+ 
