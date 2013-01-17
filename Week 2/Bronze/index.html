@@ -63,53 +63,23 @@
     	</div>
         
 	<!--Drill down list-->
-	
-    	<ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme ="d" data-theme="d">
-			<li data-role="list-divider">Browse Categories</li>
-            <li data-role="button" data-icon="arror-r" data-iconpos="right">
-			<img src="images/spend.gif" class="ui-li-icon"  alt="spend"/>
-			<h3>Spend</h3>
-			<ul>
-				<li>
-				<a href ="#spend"></a>
-				</li>
-			</ul>
-			<li data-role="button" data-inline="true" data-icon="arror-r" data-iconpos="right">
-			<img src="images/gift.gif" class= "ui-li-icon"  alt="spend"/>
-			<h3>Occasion</h3>
-			<ul>
-				<li>
-				<a href="#occasion"></a>
-				</li>
-			</ul>
-			<li data-role="button" data-inline="true" data-icon="arror-r" data-iconpos="right">
-			<img src="images/sex.gif" class ="ui-li-icon"  alt="sex"/>
-			<h3>Sex</h3>
-			<ul>
-				<li>
-				<a href="#sex"></a>
-				</li>
-			</ul>
-			<li data-role="button"  data-inline="true" data-icon="arror-r" data-iconpos="right">
-			<img src="images/state.gif" class= "ui-li-icon"  alt="sex"/>
-			<h3>State</h3>
-			<ul>
-				<li>
-				<a href="#state"></a>
-				</li>
-			</ul>
-			<li data-role="button"  data-inline="true" data-icon="arror-r" data-iconpos="right">
-			<img src="images/lName.gif" class ="ui-li-icon"  alt="last name"/>
-			<h3>Last Name</h3>
-			<ul>
-				<li>
-				<a href="#lName"></a>
-				</li>
-			</ul>
-          </ul>
-	
-        
-	 <!--footer-->
+    
+   <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
+     
+        	<li data-role="list-divider">Browse Categories</li>
+   
+ 			<li><a href ="#spend" data-transition="slide" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">Spend</a></li>
+       
+       		<li><a href="#occasion" data-transition="slide" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">Occasion</a></li>    
+		
+        	<li><a href="#sex" data-transition="slide" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">Sex</a></li>
+            
+            <li><a href="#state" data-transition="slide" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">State</a></li>
+            
+            <li><a href="#lName" data-transition="slide" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">Last Name</a></li>
+      </ul>
+     
+         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 
 			<div data-role="navbar" data-iconpos="top">
@@ -123,8 +93,210 @@
      </form>
    </div> 
   
+       	
+        <div data-role="page" id="spend" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Spend</h1>
+        </div>
+        
+        <div data-role="content">
+        <ul>
+                <li> <img src="images/spend.gif" alt = "spend" class ="ui-li-icon"/></li>
+                <li>Spend: $100</li>
+                <li>Last Name: Jordan</li>
+                <li>First Name: Chris</li>
+                <li>Occasion: Christmas</li>          
+                <li>Date: 12/25/2012</li>
+            </ul>
+            
+           
+           <ul>
+                <li> <img src="images/spend.gif" alt="spend" class ="ui-li-icon"/></li>
+                <li>Spend: $20</li>
+                <li>Last Name: Side</li>
+                <li>First Name: Cliff</li>
+                <li>Occasion: Birthday</li>          
+                <li>Date: 07/06/1982</li>
+           </ul>
+         </div>
+               
+        </div>
+        
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <div data-role="page" id="occasion" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Occasion</h1>
+        </div>
+        
+        <div data-role="content">
+           <ul>
+              <li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+              <li>Occasion: Christmas</li>
+              <li>First Name: Chris</li>
+              <li>Last Name: Jordan</li>
+              <li>Date: 12/15/2012</li>
+              <li>Spend: $100</li>
+          </ul>
+  
+          
+          <ul>
+          <li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+              <li>Occasion: Birthday</li>
+              <li>First Name: McPhalen</li>
+              <li>Last Name: Shirley</li>
+              <li>Date: 10/18/1946</li>
+              <li>Spend: $50</li>
+          </ul>
+						      
+        </div>
+        
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div>
+        
+        <div data-role="page" id="sex" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Sex</h1>
+        </div>
+        
+        <div data-role="content">
+            <ul>
+                <li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+                <li>Sex: Male</li>
+                <li>Last Name: Jordan</li>
+                <li>First Name: Chris</li>
+                <li>Occasion: Christmas</li>          
+                <li>Spend: $100</li>
+            </ul>
+            
+
+           <ul>
+                <li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+                <li>Sex: Female</li>
+                <li>Last Name: McPhalen</li>
+                <li>First Name: Shirley</li>
+                <li>Occasion: Birthday</li>          
+                <li>Spend: $50</li>
+           </ul>	
+        </div>
+        
+       
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div>
+        
+        
+        <div data-role="page" id="state" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>State</h1>
+        </div>
+        
+        <div data-role="content">
+           <ul>
+                <li> <img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>
+                <li>State: Texas</li>
+                <li>Last Name: Jordan</li>
+                <li>First Name: Chris</li>
+                <li>Occasion: Christmas</li>          
+                <li>Date: 12/25/2012</li>
+            </ul>
+            
+          
+           <ul>
+                <li><img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>	
+                <li>State: Michigan</li>
+                <li>Last Name: Collier</li>
+                <li>First Name: Doreen</li>
+                <li>Occasion: Birthday</li>          
+                <li>Date: 10/11/2012</li>
+           </ul>
+        </div>
+        
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div>
+        
+        <div data-role="page" id="lName" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+        	<h1>Last Name</h1>
+        </div>
+        
+        <div data-role="content">   							
+            <ul>
+                <li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+                <li>Last Name: Jordan</li>
+                <li>First Name: Chris</li>
+                <li>Occasion: Christmas</li>
+                <li>Date: 12/25/2012</li>
+                <li>Spend: $100</li>
+            </ul>
+            
+           
+           <ul>
+                <li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+                <li>Last Name: McPhalen</li>
+                <li>First Name: Shirley</li>
+                <li>Occasion: Birthday</li>
+                <li>Date: 10/18/1946</li>
+                <li>Spend: $100</li>
+           </ul> 
+        </div>
+        
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div>
+        
+        
+	
         <!--About Page-->
-			<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
+			<div data-role="page" id="about" data-add-back-btn="true" >
 			<div data-role="header" data-position="fixed">
 					<h2>Contact:</h2>					
 						<p>
@@ -141,7 +313,17 @@
                     	<p>
                         </p>
                         
-                   
+                   <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
                     
 				</div>
 		</div>
@@ -150,6 +332,18 @@
         <!--Newstream Page-->
 		<div data-role="page" id="newstream" data-add-back-btn="true" data-theme="a">
 			<div data-role="header" data-position="fixed">
+            
+            <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
 			</div>
        </div>
 

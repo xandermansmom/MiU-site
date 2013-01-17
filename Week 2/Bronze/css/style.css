@@ -36,82 +36,73 @@ body {
 	}
 
 h1 { 
-	color: #ffffff;
+	color: #736389;
 	text-align: center;
-	}
-		
+	}	
 
 h2 {
 	 color: #56456e;
 	 position: absolute;
-	 top: 30%;
+	 top: 5%;
 	 left: 35%;
 	}
 	
-.ui-li-heading {
-	margin-left: 30%;
-	padding-left: 10px;
+.ui-title {
+	color: #fff;
 	}
-		
+	
 .rotating-item {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-	width: 20%;
+	height: 300px;
+	width: 320px;
 	margin-left: 8%;
 	padding-right: 20px;
-	margin-top: 15%;
+	margin-top: 200px;
 }
 
 h2.call {
 	position: relative;
 	margin-left: -10%;
-	margin-top: 10%;
+	margin-top: 225px;
 	color: #000;
-	padding-left: 5%;
-	font-size: 36px;
-	width: 50%;
+	padding-left: 15%;
+	width: 35%;
 	}
 
 #add {
   	position: relative;
-	margin-top: -450px;
+	margin-top: 25%;
 	margin-left: 150px;	
 	}
 	
-.ui-listview .ui-li-icon {
-  max-height: 40px !important;
-  max-width: 40px !important;
+li span {
+	font-weight: bold;
 	}
-
+	
 .ui-input-text ui-body-c {
 	margin-top: 75%;
 	margin-left:-350px;	
 	}
-		
-.ui-li .ui-li-divider .ui-bar-d .ui-corner-top{
- 	margin-top:30% !important;
-	margin-left: -350px !important;
-	}
-
-ul.sublinks {
-	padding: 0;
-  	margin: 225px 0 5px 140px;	
-	}
-
-ul.sublinks li {
-	list-style-type: none;	
-  	padding: 10px;
-	}
 	
-ul.sublinks li:last-child {
-	padding-bottom: 50px;
+.ui-bar .ui-bar-a .ui-header{
+	position: absolute;
+ 	margin-top:300px;
+	margin-left: -350px;
+	border-radius: 15px;
+	moz-border-radius: 15px;
 	}
+
+.ui-collapsible-content li	{
+	color: #000;
+	}
+
 	
 .ui-li-icon {
-	max-height: 40px;
-	max-width: 40px
+	max-height: 40px !important;
+	max-width: 40px !important
 	}
 
 p {
@@ -302,27 +293,40 @@ input[type=button] {
     }  
 
 @media screen and (max-device-width: 600px){
-    /* All iPhone only CSS goes here*/
+	
 	
 h2.call {
+	font-size: 15px;
+	margin-left: -20px;
+	margin-top: 40px;
 	color: #000;
-	font-size: 24px;
-	padding-left: 30px;
-	padding-right: 40px;
-	margin-top: 125px;
-	margin-left: 40px;
-	width: 300px;
-	}	
+	padding-left: 15%;
+	width: 180px;
+	}
 	
 .rotating-item {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 35%;
-	margin-left: 10%;
-	padding-right: 10px;
-	margin-top: 45%;
-	height: 150px;
-	width:150px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+	height: 100px;
+	width:100px;
+	margin-left: 8%;
+	padding-right: 20px;
+	margin-top: 85px;
+}
+
+#add {
+	margin-top: 25px;
+	margin-left: 10px;	
 	}
+
+}
+	
+	
+	
+ h1.ui-title {
+	width: 100%;
+	}
+
 }
