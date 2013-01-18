@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function(){
 								 "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma",
 								 "Oregon","Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee","Texas", "Utah", "Vermont",
 								 "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"],	
-	    theOccasion = ["--Which Special Occasion?--", "Birthday", "Anniversary", "Graduation", "Christmas", "Baby_Shower"],
+	    theOccasion = ["--Which Special Occasion?--", "Birthday", "Anniversary", "Graduation", "Christmas", "Shower"],
 		sexValue,
 		errMsg = $('errors');
 
