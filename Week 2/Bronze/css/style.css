@@ -328,11 +328,14 @@ input[type=button] {
 .thumb, .thumb2 {
 	 margin-left: 100px;
 	   }
-  
-  
+	   
+.thum2, .thumb4{
+	padding-bottom: 10px;
+}
+    
 .thumb p {
    margin-left: -280px;
-   margin-top: -30px;
+   margin-top: 0px;
    color: #fff;
    font-size: 12px;
    background: #000;
@@ -341,14 +344,16 @@ input[type=button] {
    
 .thumb2 p {
 	margin-left: -260px;
-	margin-top: 70px;
-	color: #000;
+	margin-top: 100px;
+	color: #fff;
 	font-size: 12px;
+	background: #000;
+	width: 50px;	
 	}
 
 .thumb3 p {
 	margin-left: -150px;
-	margin-top: -30px;
+	margin-top: 0px;
 	color: #fff;
 	font-size: 12px;
 	background: #000;
@@ -357,7 +362,7 @@ input[type=button] {
 	
 .thumb4 p {
 	margin-left: -170px;
-	margin-top: 70px;
+	margin-top: 100px;
 	color: #fff;
 	font-size: 12px;
 	background: #000;
