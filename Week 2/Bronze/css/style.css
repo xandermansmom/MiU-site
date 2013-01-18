@@ -325,6 +325,48 @@ input[type=button] {
 	width: 175px;
 	}
 
+.thumb, .thumb2 {
+	 margin-left: 100px;
+	   }
+  
+  
+.thumb p {
+   margin-left: -280px;
+   margin-top: -35px;
+   color: #fff;
+   font-size: 14px;
+   }
+   
+.thumb2 p {
+	margin-left: -270px;
+	margin-top: 65px;
+	color: #000;
+	font-size: 14px;
+	}
 
+.thumb3 p {
+	margin-left: -150px;
+	margin-top: -35px;
+	color: #fff;
+	font-size: 14px;	
+	}
+	
+.thumb4 p {
+	margin-left: -175px;
+	margin-top: 60px;
+	color: #fff;
+	font-size: 14px;
+	}
+
+	
+.thumb3 {
+	margin-left: 200px;
+	margin-top: -200px;
+	}
+	
+.thumb4 {
+	margin-left: 200px;
+	margin-top: -10px;
+}
 	
  
