@@ -63,12 +63,14 @@
         	<div id = "add">
             <a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
     		</div>
-    
+    		<br />
    <!-- List Inlay -->
-        <div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a">
-		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Browse Categories </div>
-		<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible-set" data-collapsed="true" data-theme="a">
+        <div data-role="listview" data-inset="true" data-filter="true"><br />
+		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Browse Categories </div> 
+		<div data-role="collapsible" data-collapsed="true"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
 		
+        
             <h3>Browse by Spend</h3>
             				<ul>
                                		<li> <img src="images/spend.gif" alt = "spend" class ="ui-li-icon"/></li>
@@ -90,7 +92,7 @@
                                </ul>
          </div>
          
-         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a">
+         <div data-role="collapsible" data-collapsed="true" data-filter="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a">
 
          						  <h3>Browse by Occasion</h3>	
             				<ul>
@@ -184,6 +186,7 @@
                                 	<li>Date: 10/18/1946</li>
                                 	<li>Spend: $100</li>
                                </ul> 
+                    </div>       
           	</div>  
       </div>
 
@@ -210,7 +213,8 @@
 			</div>
 			</header>
             
-			<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a">
+			<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a"><br />
+            <div data-role="listview" data-inset="true" data-filter="true"><br />
 			<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">About</div>
             
 			<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
@@ -259,6 +263,7 @@
  	              			<li><a href="https://github.com/xandermansmom/MiU-site" target="_blank">Github Repo</a></li>
                        </ul>
        		</div>
+        </div>
 
 
         <!--footer-->
@@ -285,7 +290,8 @@
 			</div>
 		</header>
         
-		<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a">
+		<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a"> <br/>
+        <div data-role="listview" data-inset="true" data-filter="true"><br />
 		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Occasions</div>
         
         
@@ -524,6 +530,7 @@
             		<li> <span>State:</span>Texas</li>
         		</ul>
           </div>
+       </div>
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 
