@@ -1,21 +1,13 @@
 
-$('#home').on('pageinit', function(){
 
-function validate(){
-        var parseaiForm = function(data){
-            storeaddItem(data);
-        };
-        $('#additemform').on('pageinit', function () {
-            var adForm = $("#createItemForm");
-            adForm.validate({
-                invalidHandler: function(form, validator){},
-                submitHandler: function(){
-                    var data = adForm.serializeArray();
-                    parseaiForm(data);
-                }
-            });
-        });
-    }
+$(document).bind('pageinit', function() {
+    var aiform = $('#additemform');
+    aiform.validate();
+      console.log();
+
+});
+
+
 
 function saveData(key){
 		//If there is no key, generate a new key for the brand new item
@@ -40,20 +32,60 @@ function saveData(key){
 			item.telephone		= [ "Telephone:", $('telephone').value];
 			item.address		= [ "Address:", $('address').value];
 			item.city			= ["City:" , $('city').value];
-			item.states			= ["State:", $('states').value];
+			item.states			= ["State:", $('state').value];
 			item.zip			= [ "Zip:", $('zip').value];
-			item.occasions		= ["Occasion:", $('occasions').value];
+			item.occasions		= ["Occasion:", $('occasion').value];
 			item.date			= ["Date:", $('date').value];
 			item.sex			= ["Sex:", sexValue];
-			item.spend			= ["Spend:", $('spend').value];
+			item.spend			= ["Spend:", $('Maxspend').value];
 			item.comments		= ["Comments:", $('comments').value];				
 		//Save data into local storage. Use stringify to convert objects into strings.
 		localStorage.setItem(id, JSON.stringify(item));		
 		alert("The Special Occasion is saved!");		
 	}
 
+function getData(){
+		if(localStorage.length === 0){
+			alert("There is no data in local storage so default data was added.");
+			autoFillData();
+		}	
+	//Write data from local storage to the browser		
+	var makeDiv = document.createElement('div');
+	makeDiv.setAttribute("id", "items");
+	var makeList = document.createElement('ul');
+	makeDiv.appendChild(makeList);
+	document.body.appendChild(makeDiv);
+	$('items').style.display = "block";		
+	for(var i=0, len=localStorage.length; i<len; i++){
+		var makeLi = document.createElement('li');
+		var linksLi = document.createElement('li');
+		makeList.appendChild(makeLi);
+		var key = localStorage.key(i);
+		var value = localStorage.getItem(key);		
+		//Convert the string in local storage back into an object using JSON.parse method
+		var obj =JSON.parse(value);	
+		var makeSubList = document.createElement('ul');
+		makeLi.appendChild(makeSubList);
+		getImage(obj.occasions[1], makeSubList);
+		for(var n in obj){
+			var makeSubLi = document.createElement('li');
+			makeSubList.appendChild(makeSubLi);
+			var optSubText = obj[n][0]+" "+obj[n][1];
+			makeSubLi.innerHTML = optSubText;
+			makeSubList.appendChild(linksLi);
+			}
+			makeItemLinks(localStorage.key(i), linksLi);//Create edit and delete links for each list item in local storage
+		}
+	}
+
 
 //Reset link to clear page		
-	$('#additem')[0].reset();
-		
-});
+Reset = function() {
+    var clear = $('#additem')[0].reset();
+};
+
+
+	
+
+	
+
