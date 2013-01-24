@@ -336,24 +336,25 @@ label.error {
 	}
 
 #aierrorslink {
-
+	display: none;
 	}
 	
 p#req {
-	margin-top: -300px;
+	display: block;
+	margin-top: -275px;
+	padding: 5px 10px;
 	margin-left: -395px;
 	color: #cc0000;
 	font-size: 14px;
-	}
-	
-.red {
-	color: #ccoooo;
-	font-size: 14px;
-	margin-left: 0px;}
+	}	
 	
 #reset {
 		display: block;
 		margin-top: 15px;
 		text-align: center;
+	}
+	
+label.ui-input-text:first-child{
+	padding-top: 10px;
 	}
 	

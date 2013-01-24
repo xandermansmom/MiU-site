@@ -74,7 +74,6 @@ li span {
 .ui-bar .ui-bar-a .ui-header{
 	position: absolute;
  	margin-top:300px;
-	margin-left: -350px;
 	border-radius: 15px;
 	moz-border-radius: 15px;
 	}
@@ -122,8 +121,6 @@ p#bronze, p#gold, p#ghRepo{
 	margin-left: -350px;
 	}
 
-
-
 p {
 	position: absolute;
 	top: 299px;
@@ -158,7 +155,6 @@ nav	a {
  a:active {
  	border: 2px inset;
 	}	
-
 	
 legend {
 	background: #56456e;	
@@ -324,55 +320,42 @@ input[type=button] {
 	text-align: center;
 	width: 175px;
 	}
-
-.thumb, .thumb2 {
-	 margin-left: 100px;
-	   }
-  
-  
-.thumb p {
-   margin-left: -280px;
-   margin-top: -30px;
-   color: #fff;
-   font-size: 12px;
-   background: #000;
-   width: 80px;
-      }
-   
-.thumb2 p {
-	margin-left: -260px;
-	margin-top: 70px;
-	color: #000;
-	font-size: 12px;
+	
+.ui-collapsible .ui-collapsible-inset .ui-collapsible-collapsed{
+	margin-left: 0px;
+	}
+	
+.ui-btn-text h3{
+	width: 300px;
+	}
+	
+label.error {
+	display: block;
+	margin: 10px 0;
+	color: #cc0000;
 	}
 
-.thumb3 p {
-	margin-left: -150px;
-	margin-top: -30px;
-	color: #fff;
-	font-size: 12px;
-	background: #000;
-	width: 30px;	
-	}
-	
-.thumb4 p {
-	margin-left: -170px;
-	margin-top: 70px;
-	color: #fff;
-	font-size: 12px;
-	background: #000;
-	width: 60px;
-	}
+#aierrorslink {
 
-	
-.thumb3 {
-	margin-left: 200px;
-	margin-top: -200px;
 	}
 	
-.thumb4 {
-	margin-left: 200px;
-	margin-top: -10px;
-}
+p#req {
+	margin-top: -300px;
+	margin-left: -395px;
+	color: #cc0000;
+	font-size: 14px;
+	}
 	
- 
+.red {
+	color: #ccoooo;
+	font-size: 14px;
+	margin-left: 0px;
+	left-align: 0px;
+	}
+	
+#reset {
+		display: block;
+		margin-top: 15px;
+		text-align: center;
+	}
+	

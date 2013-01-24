@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--Michele Laramore-->
 <!--MiU-->
-<!--Project 3 Bronze-->
+<!--Project 2 Bronze-->
 <!---->
 
 <html>
@@ -58,9 +58,22 @@
         </div>
         
         <div id="add">
-        	<a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
+        	<a href="#additem" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
   		</div>
         <br/>
+        
+        
+  <div data-role="page" id="additem" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Add Item</h1>
+	</div>
+    
+    <div data-role="content">
+    	test
+    
+    </div>
+ </div>
 	<!--Drill down list-->
     
    <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
@@ -351,39 +364,31 @@
             					<li><span>E-mail:</span> xandermansmom@fullsail.edu</li>
             					<li><span>Phone:</span> (254) 366-0084</li>
                            </ul>
-  
-
- <div class="ui-grid-a">
-	<div class="ui-block-a">
-    	<div class="ui bar ui-bar-a">
-        Programmer
-        		<img src="images/me.gif" height="75px" width="75px" alt="Michele" />
-         </div>
- 	</div>
-    
-	<div class="ui-block-b">
-    	<div class="ui bar ui-bar-a">
-        School
-        	<img src="images/fullsail.gif" height="75px" width="75px" alt="Full Sail" />
-        </div>
-    </div>
+                             
+          <div class="thumb">
+ 		  <img src="images/me.gif" width="100" height="100"
+          alt="Michele" /><br />
+          <p>Programmer</p>
+          </div>
         
-	<div class="ui-block-a">
-    	<div class="ui bar ui-bar-a">
-        Repository
-        	<img src="images/github.gif" height="75px" width="75px" alt="Github" />
+        <div class="thumb2">
+          <img src="images/fullsail.gif" width="100" height="100"
+          alt="Full Sail" /><br />
+          <p>School</p>
         </div>
-    </div>
-    
-	<div class="ui-block-b">
-    	<div class="ui bar ui-bar-a">
-        Uploader
-        	<img src="images/smartgit.gif" height="75px" width="75px" alt="Smartgit"/>
+        
+        <div class="thumb3">
+          <img src="images/github.gif" width="100" height="100"
+          alt="Github" /><br />
+          <p>Repo</p>
         </div>
-   </div>
-</div>
-
-                           
+        
+        <div class="thumb4">
+        <img src="images/smartgit.gif" width ="100" height="100"
+        alt="SmartGit" /><br />
+        <p>Uploader</p>
+        </div>                 
+        
          <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 
@@ -396,9 +401,6 @@
 			</div>
 		</div> 
      </div>
-     
- 
-     
          <div data-role="page" id="goldApp" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
         	<h1>Gold App</h1>

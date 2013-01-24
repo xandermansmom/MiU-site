@@ -3,7 +3,8 @@ function validate(){
   var add = function(data){
   storeData(data);
   };
-  $('#additem').on('pageinit', function(){
+ $('#addItem').on('pageinit', function(){
+
   var aiform = $("#additemform");
   aiform.validate({
   invalidHandler: function(form, validator){},
@@ -15,3 +16,8 @@ function validate(){
   })
   });
   }
+  
+  //Reset link to clear page		
+	$('#additem')[0].reset();
+
+		
