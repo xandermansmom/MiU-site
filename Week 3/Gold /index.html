@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!--Michele Laramore-->
+<!--Mobile Interfaces and Usability-->
+
+<html>
+<head>
+	<title>Add Item to Form</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="special occasion, reminder" />
+    <meta name="description" content="special occasion reminder app" />
+    <meta name="robots" content="index, follow" />
+	<meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <meta name="author" content="Michele Laramore" />
+    
+      <!--JQuery UI styles-->
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"></script>
+    	
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="themes/purple.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<!--Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!--JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.63175.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+	<script type="text/javascript" src="js/infinite-rotator.js"></script>
+</head>
+
+    <body>
+   
+<div data-role="page" id="home" data-theme="a">
+
+	<header>
+		<div data-role="header"  data-position="fixed">
+			<h1>Special Occasion App</h1>
+		</div>
+	</header>
+
+    
+	<div data-role="content">
+     <!--Filter Search-->
+   <form method ="get"  action= "">         
+    
+ 	<!--Call to Action-->
+    
+    	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
+			<div>			
+        		<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
+     			<img class="rotating-item" src="images/heart-w-rose.gif" alt="Anniversary" />
+				<img class="rotating-item" src="images/diploma.gif"  alt="Graduation"/>     
+     			<img class="rotating-item" src="images/woman-and-buggie.gif"  alt="Baby Shower" />
+       	   		<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
+        	</div>
+        
+        	<div id = "add">
+            <a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
+    		</div>
+    		<br />
+   <!-- List Inlay -->
+        <div data-role="collapsible-set" data-collapsed="true" data-theme="a">
+        <div data-role="listview" data-inset="true" data-filter="true"><br />
+		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Browse Categories </div> 
+		<div data-role="collapsible" data-collapsed="true"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+		
+        
+            <h3>Browse by Spend</h3>
+            				<ul>
+                               		<li> <img src="images/spend.gif" alt = "spend" class ="ui-li-icon"/></li>
+            						<li>Spend: $100</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Date: 12/25/2012</li>
+                                </ul>
+                                
+                               
+                               <ul>
+                               		<li> <img src="images/spend.gif" alt="spend" class ="ui-li-icon"/></li>
+            						<li>Spend: $20</li>
+            						<li>Last Name: Side</li>
+                               		<li>First Name: Cliff</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Date: 07/06/1982</li>
+                               </ul>
+         </div>
+         
+         <div data-role="collapsible" data-collapsed="true" data-filter="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a">
+
+         						  <h3>Browse by Occasion</h3>	
+            				<ul>
+                                	<li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+                                	<li>Occasion: Christmas</li>
+                                	<li>First Name: Chris</li>
+                                	<li>Last Name: Jordan</li>
+									<li>Date: 12/15/2012</li>
+                                	<li>Spend: $100</li>
+                                </ul>
+						
+								
+                                <ul>
+                                <li><img src="images/gift.gif" alt="occasion" class ="ui-li-icon"/></li>
+                                	<li>Occasion: Birthday</li>
+                                	<li>First Name: McPhalen</li>
+                                	<li>Last Name: Shirley</li>
+									<li>Date: 10/18/1946</li>
+                                	<li>Spend: $50</li>
+                                </ul>
+						
+		</div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
+			<h3>Browse by Sex</h3>
+            
+            					
+            				<ul>
+                                	<li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+            						<li>Sex: Male</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Spend: $100</li>
+                                </ul>
+                                
+           
+                               <ul>
+                               		<li><img src="images/sex.gif" alt="sex" class ="ui-li-icon"/></li>
+            						<li>Sex: Female</li>
+            						<li>Last Name: McPhalen</li>
+                               		<li>First Name: Shirley</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Spend: $50</li>
+                               </ul>
+			
+		</div>
+        
+       <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
+			<h3>Browse by State</h3>
+            					
+            				<ul>
+                               		<li> <img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>
+            						<li>State: Texas</li>
+            						<li>Last Name: Jordan</li>
+                                	<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>          
+                               		<li>Date: 12/25/2012</li>
+                                </ul>
+                                
+                              
+                               <ul>
+                               		<li><img src="images/state.gif" alt="state" class ="ui-li-icon"/></li>	
+            						<li>State: Michigan</li>
+            						<li>Last Name: Collier</li>
+                               		<li>First Name: Doreen</li>
+									<li>Occasion: Birthday</li>          
+                                	<li>Date: 10/11/2012</li>
+                               </ul>
+		</div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
+			<h3>Browse by Last Name</h3>
+            				
+            					
+            				<ul>
+                                	<li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+                                	<li>Last Name: Jordan</li>
+            						<li>First Name: Chris</li>
+									<li>Occasion: Christmas</li>
+                                	<li>Date: 12/25/2012</li>
+                                	<li>Spend: $100</li>
+                                </ul>
+                                
+                               
+                               <ul>
+                               		<li><img src="images/lName.gif" alt="last name" class ="ui-li-icon"/></li>
+            						<li>Last Name: McPhalen</li>
+            						<li>First Name: Shirley</li>
+									<li>Occasion: Birthday</li>
+                                	<li>Date: 10/18/1946</li>
+                                	<li>Spend: $100</li>
+                               </ul> 
+                    </div>       
+          	</div>  
+      </div>
+
+     <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </form>
+   </div> 
+</div>  
+        <!--About Page-->
+			<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
+            
+            <header>
+				<div data-role="header" data-position="fixed">
+					<h1>Special Occasion App</h1>
+			</div>
+			</header>
+            
+			<div data-role="collapsible-set" data-collapsed="true" data-theme="a"><br />
+            <div data-role="listview" data-inset="true" data-filter="true"><br />
+			<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">About</div>
+            
+			<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+		
+            	<h3>Contact</h3>
+            				<ul>
+                               	<li><span>Name:</span>  Michele Laramore</li>
+            					<li><span>E-mail:</span> xandermansmom@fullsail.edu</li>
+            					<li><span>Phone:</span> (254) 366-0084</li>
+                           </ul>
+          
+			</div>
+            <div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Credit</div>
+           <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+
+           		<h3>Hints, Tips, and Coding Advice</h3>
+           					<ul>
+                    		   <li><span>Instructor:</span> Mrs. Robin Alarcon</li>
+                               <li><span>Coding Buddy:</span> Josh Wilcox</li>
+                               <li><span>Online Assistance:</span><br/> FSO MDVBS Facebook Group</li>
+                            </ul>
+                                    
+            </div>
+                      
+         	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+     			<h3>Rotating Images Code</h3>
+            				<ul>
+                            	<li><span>Code Source:</span> TrendMedia Technologies, Inc., Brian McNitt.</li>
+                                <li><span>Website:</span> <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/" target=		                                 "_blank">Trendmedia</a></li>
+                           	</ul>
+       		</div>
+          
+        	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+	  			<h3>HTML5 Slider Code for for Firefox</h3>
+                			<ul>
+                    			<li><span>Code Source:</span> Frank Yan</li>
+                    			<li><span>Website:</span> <a href="https://github.com/fryn/html5slider" target="_blank">Frank Yan's Github HTML5 Slider                                 Source Code</a></li>
+                            </ul>                   
+				</div>
+            <div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Github</div>
+        	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        		<h3>Github Links</h3>
+                		<ul>
+                			<li><a href="http://xandermansmom.github.com/MiU-site/Week%202/Bronze/" target="_blank">Bronze App</a></li>                
+							<li><a href="https://github.com/xandermansmom/MiU-site/tree/master/Week%202/Bronze" target="_blank">Bronze gh-pages</a></li>               				<li><a href="https://github.com/xandermansmom/MiU-site/tree/master/Week%202/Gold%20" target="_blank">Gold gh-pages</a></li>
+ 	              			<li><a href="https://github.com/xandermansmom/MiU-site" target="_blank">Github Repo</a></li>
+                       </ul>
+       		</div>
+        </div>
+
+
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div>
+		</div>
+     </div>
+  </div>
+		
+        
+        <!--Newstream Page-->
+		<div data-role="page" id="newstream" data-add-back-btn="true" data-theme="a">
+        
+        <header>
+			<div data-role="header"  data-position="fixed">
+				<h1>Special Occasion App</h1>
+			</div>
+		</header>
+        
+		<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a"> <br/>
+        <div data-role="listview" data-inset="true" data-filter="true"><br />
+		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Occasions</div>
+        
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <h3>Current Month</h3>
+       	
+        
+        	<ul>
+				<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span> 1/4/1989</li>
+            	<li> <span>Occasion:</span> Birthday </li>
+            	<li> <span>Spend:</span> $10</li>
+            	<li> <span>Last Name:</span> Houston</li>
+            	<li> <span>State:</span> Kentucky</li>
+        	</ul>
+         </div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>Next Month</h3>   	
+            <p> No occasions this month!</p>
+		</div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <h3>March</h3>
+        
+        	<ul>
+            	<li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>3/10/1974 </li>
+            	<li> <span>Occasion:</span>Anniversary</li>
+            	<li> <span>Spend:</span>$100</li>
+            	<li> <span>Last Name:</span>McDaniel</li>
+            	<li> <span>State:</span>Texas </li>
+        	</ul>
+          </div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>April</h3>
+     
+       	<p> No occasions this month!</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+		<h3>May</h3>       
+        
+        	<ul>
+            	<li><img src="images/Graduation.png" alt="graduation" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>5/1/2013</li>
+            	<li> <span>Occasion:</span>Graduation </li>
+            	<li> <span>Spend:</span>$10</li>
+            	<li> <span>Last Name:</span>Banks</li>
+            	<li> <span>State:</span>North Carolina</li>
+        	</ul>
+        	<ul>
+            	<li><img src="images/Graduation.png" alt="graduation" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>5/1/2013</li>
+            	<li> <span>Occasion:</span>Graduation</li>
+            	<li> <span>Spend:</span>$10</li>
+            	<li> <span>Last Name:</span>Howard</li>
+            	<li> <span>State:</span>Texas</li>
+        	</ul>
+            
+            <ul>
+            	<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>5/28/1944</li>
+            	<li> <span>Occasion:</span>Birthday</li>
+            	<li> <span>Spend:</span> $100</li>
+            	<li> <span>Last Name:</span>Knight</li>
+            	<li> <span>State:</span>California</li>
+        	</ul>
+         </div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>June</h3>
+        	 <ul>
+             	<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>6/15/1988</li>
+            	<li> <span>Occasion:</span>Birthday</li>
+            	<li> <span>Spend:</span> $10</li>
+            	<li> <span>Last Name:</span>Payne</li>
+            	<li> <span>State:</span>Washington</li>
+        	</ul>
+            
+             <ul>
+             	<li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        		<li> <span>Date:</span>6/27/1982</li>
+            	<li> <span>Occasion:</span> Anniversary</li>
+            	<li> <span>Spend:</span> $10</li>
+            	<li> <span>Last Name:</span>Reed</li>
+            	<li> <span>State:</span>Michigan</li>
+        	</ul>
+        		
+        </div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>July</h3>
+        
+        		<ul>
+                	<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>7/6/1982</li>
+            		<li> <span>Occasion:</span> Birthday</li>
+            		<li> <span>Spend:</span> $20</li>
+            		<li> <span>:ast Name:</span>Side</li>
+            		<li> <span>State:</span>Arizona</li>
+        	</ul>
+        </div>
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>August</h3>
+        
+        			<p> No occasions this month!</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>September</h3>
+        
+        		<ul>
+                    <li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>9/1/1996</li>
+            		<li> <span>Occasion:</span>Anniversary</li>
+            		<li> <span>Spend:</span> $40</li>
+            		<li> <span>Last Name:</span>Oka</li>
+            		<li> <span>State:</span>California</li>
+        		</ul>
+        		
+                <ul>
+                    <li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>9/4/1981</li>
+            		<li> <span>Occasion:</span>Anniversary</li>
+            		<li> <span>Spend:</span> $50</li>
+            		<li> <span>Last Name:</span>Osborne</li>
+            		<li> <span>State:</span>Minnesota</li>
+        		</ul>
+                
+                 <ul>
+                    <li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>9/4/2011</li>
+            		<li> <span>Occasion:</span>Anniversary</li>
+            		<li> <span>Spend:</span> $100</li>
+            		<li> <span>Last Name:</span>Jordan</li>
+            		<li> <span>State:</span>Texas</li>
+        		</ul>
+        
+        </div>
+        
+       	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<h3>October</h3>
+        
+        		 <ul>
+                    <li><img src="images/Anniversary.png" alt="anniversary" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>10/7/1999</li>
+            		<li> <span>Occasion:</span>Anniversary</li>
+            		<li> <span>Spend:</span> $40</li>
+            		<li> <span>Last Name:</span>Zimmerman</li>
+            		<li> <span>State:</span>Kentucky</li>
+        		</ul>
+                
+                 <ul>
+                    <li><img src="images/Baby_Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>10/11/2013</li>
+            		<li> <span>Occasion:</span>Baby Shower</li>
+            		<li> <span>Spend:</span> $100</li>
+            		<li> <span>Last Name:</span>Collier</li>
+            		<li> <span>State:</span>North Carolina</li>
+        		</ul>
+                
+                <ul>
+                    <li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>10/14/1972</li>
+            		<li> <span>Occasion:</span>Birthday</li>
+            		<li> <span>Spend:</span> $100</li>
+            		<li> <span>Last Name:</span>McPhalen</li>
+            		<li> <span>State:</span>California</li>
+        		</ul>
+                
+                 <ul>
+                    <li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>10/18/1946</li>
+            		<li> <span>Occasion:</span>Birthday</li>
+            		<li> <span>Spend:</span> $50</li>
+            		<li> <span>Last Name:</span>McPhalen</li>
+            		<li> <span>State:</span>Texas</li>
+        		</ul>
+        </div>
+          
+         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">      		
+       	<h3>November</h3>
+        		<ul>
+        			<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>11/19/1967</li>
+            		<li> <span>Occasion:</span>Birthday</li>
+            		<li> <span>Spend:</span> $20</li>
+            		<li> <span>Last Name:</span>Cruz</li>
+            		<li> <span>State:</span>California</li>
+        		</ul>
+        </div>
+        
+        
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+		<h3>December</h3>
+        		<ul>
+         			<li><img src="images/Baby_Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>12/10/2013</li>
+            		<li> <span>Occasion:</span>Baby Shower</li>
+            		<li> <span>Spend:</span> $15</li>
+            		<li> <span>Last Name:</span>Fuller</li>
+            		<li> <span>State:</span>California</li>
+        		</ul>
+                
+                <ul>
+        			<li><img src="images/Christmas.png" alt="christmas" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>12/25/2013</li>
+            		<li> <span>Occasion:</span>Christmas</li>
+            		<li> <span>Spend:</span> $30</li>
+            		<li> <span>Last Name:</span>Adams</li>
+            		<li> <span>State:</span>Texas</li>
+        		</ul>
+                
+                 <ul>
+        			<li><img src="images/Christmas.png" alt="christmas" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>12/25/2013</li>
+            		<li> <span>Occasion:</span>Christmas</li>
+            		<li> <span>Spend:</span>$10</li>
+            		<li> <span>Last Name:</span>Reese</li>
+            		<li> <span>State:</span>California</li>
+        		</ul>
+        </div>
+
+         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+		<h3>Next Year</h3>
+        		<ul>
+         			<li><img src="images/Graduation.png" alt="graduation" class ="ui-li-icon"/></li>
+        			<li> <span>Date:</span>5/5/2014</li>
+            		<li> <span>Occasion:</span>Graduation</li>
+            		<li> <span>Spend:</span> $100</li>
+            		<li> <span>Last Name:</span>McPhalen</li>
+            		<li> <span>State:</span>Texas</li>
+        		</ul>
+          </div>
+       </div>
+        <!--footer-->
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
+				</ul>
+			</div> 
+         </div> 
+	</div>
+ </div>
+
+	
+<!--Javascript sources-->
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</body>
+        
+    
+   
+    
+
+ 
+
+
+    
+
