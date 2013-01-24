@@ -1,10 +1,8 @@
 
 
-$(document).bind('pageinit', function() {
+$('#additemform').bind('pageinit', function() {
     var aiform = $('#additemform');
     aiform.validate();
-      console.log();
-
 });
 
 
@@ -81,7 +79,7 @@ function getData(){
 
 //Reset link to clear page		
 Reset = function() {
-    var clear = $('#additem')[0].reset();
+    var clearpage = $('#additem')[0].reset();
 };
 
 
