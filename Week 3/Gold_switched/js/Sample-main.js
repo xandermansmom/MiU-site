@@ -1,13 +1,39 @@
 
+ $('#home').on('pageinit', function(){
+	//code needed for home page goes here
+});	
+		
+$('#additem').on('pageinit', function()
+{
+		var aiform = $('#additemform');
+		    aiform.validate ({
+			invalidHandler: function(form, validator) {
+			},
+			submitHandler: function() {
+		var data = aiform.serializeArray();
+		var storeData;
+			storeData(data);
+		}
+	});
 
-$('#additemform').bind('pageinit', function() {
-    var aiform = $('#additemform');
-    aiform.validate();
 });
 
+//Get Error messages
+		var messageAry = [];
+	
+//Find value of selected radio button
+	function getSelectedRadio(){
+		var radios = document.forms[0].sex;
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].checked){
+				sexValue = radios[i].value;
+			}
+		}
+}
 
 
-function saveData(key){
+
+var storeData = function(data, key){
 		//If there is no key, generate a new key for the brand new item
 		if(!key){
 		var id 				= Math.floor(Math.random()*100000001);	
@@ -40,48 +66,13 @@ function saveData(key){
 		//Save data into local storage. Use stringify to convert objects into strings.
 		localStorage.setItem(id, JSON.stringify(item));		
 		alert("The Special Occasion is saved!");		
-	}
-
-function getData(){
-		if(localStorage.length === 0){
-			alert("There is no data in local storage so default data was added.");
-			autoFillData();
-		}	
-	//Write data from local storage to the browser		
-	var makeDiv = document.createElement('div');
-	makeDiv.setAttribute("id", "items");
-	var makeList = document.createElement('ul');
-	makeDiv.appendChild(makeList);
-	document.body.appendChild(makeDiv);
-	$('items').style.display = "block";		
-	for(var i=0, len=localStorage.length; i<len; i++){
-		var makeLi = document.createElement('li');
-		var linksLi = document.createElement('li');
-		makeList.appendChild(makeLi);
-		var key = localStorage.key(i);
-		var value = localStorage.getItem(key);		
-		//Convert the string in local storage back into an object using JSON.parse method
-		var obj =JSON.parse(value);	
-		var makeSubList = document.createElement('ul');
-		makeLi.appendChild(makeSubList);
-		getImage(obj.occasions[1], makeSubList);
-		for(var n in obj){
-			var makeSubLi = document.createElement('li');
-			makeSubList.appendChild(makeSubLi);
-			var optSubText = obj[n][0]+" "+obj[n][1];
-			makeSubLi.innerHTML = optSubText;
-			makeSubList.appendChild(linksLi);
-			}
-			makeItemLinks(localStorage.key(i), linksLi);//Create edit and delete links for each list item in local storage
-		}
-	}
+	};
 
 
 //Reset link to clear page		
 Reset = function() {
     var clearpage = $('#additem')[0].reset();
 };
-
 
 	
 
