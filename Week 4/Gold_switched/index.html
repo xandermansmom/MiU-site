@@ -88,9 +88,10 @@
 					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
 				</ul>
 			</div>
-		</div>
-     </form>
-  
+		</div> 
+    
+      </form>
+    </div>
         <div data-role="page" id="spend" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
         	<h1>Spend</h1>
@@ -116,7 +117,7 @@
                 <li>Date: 07/06/1982</li>
            </ul>
          </div>
-       </div>
+   
         
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -129,6 +130,7 @@
 				</ul>
 			</div>
 		</div>
+      </div>
         
         <div data-role="page" id="occasions" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
@@ -1005,9 +1007,9 @@
 		<h1>Add Item</h1>
 	</div>
     
-    <div data-role="content">
+    <div data-role="content">     
     
-  <form action="" id="additemform">
+  <form action="" method="post" id="additemform">
      <div data-role="fieldcontain">
     	<p id="req">* The following form items are required</p>
     </div>
@@ -1125,10 +1127,10 @@
           		<fieldset data-role="controlgroup">
                 	<legend>What sex?</legend> 
 
-               		 <input type="radio" name="sex" id="Male">
+               		 <input type="radio" name="Sex" id="Male">
                		 <label for="Male">Male</label>
 
-               		<input type="radio" name="sex"  id="Female" checked>
+               		<input type="radio" name="Sex"  id="Female" checked>
                		<label for="Female">Female</label>
                 </fieldset>
            </div>
@@ -1152,12 +1154,13 @@
             <a href="#" onClick="reset()">Reset</a>
           </div> 
           
-          <div>
+       
            <a href="#additemerrors" id="aierrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
-         </div>
+       
  </form>
  	</div>
  </div>
+ 
 <div data-role="dialog" id="additemerrors">
 
 	<div data-role="header" data-position="fixed">
