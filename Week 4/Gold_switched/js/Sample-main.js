@@ -23,59 +23,57 @@ $('#additem').on('pageinit', function(){
 			},
 			submitHandler: function(){
 				var data = aiform.serializeArray();
-				storeData(this.key);
+					storeData(data);					
 		}
 	});
-});
-
 
 //Auto Populate Local Storage
-	function autoFillData(){
+	//function autoFillData(){
 		//The actual JSON OBJECT required for this to work is coming from our json.js file which is loaded from our HTML page.
 		//Store the JSON OBJECT in local storage.
-		for(var n in json){
-			var id = Math.floor(Math.random()*100000001);	
-				localStorage.setItem(id, JSON.stringify(json[n]));
-		}	
-	}
+	//	for(var n in json){
+	//		var id = Math.floor(Math.random()*100000001);	
+	//			localStorage.setItem(id, JSON.stringify(json[n]));
+	//	}	
+	//}
 
-function getData(){
-		toggleControls("on");
-		if(localStorage.length === 0){
-			alert("There is no data in local storage so default data was added.");
-			autoFillData();
-		}	
+//function getData(){
+//		toggleControls("on");
+//		if(localStorage.length === 0){
+//		alert("There is no data in local storage so default data was added.");
+//		autoFillData();
+//		}	
 	//Write data from local storage to the browser		
-	var makeDiv = document.createElement('div');
-	makeDiv.setAttribute("id", "items");
-	var makeList = document.createElement('ul');
-	makeDiv.appendChild(makeList);
-	document.body.appendChild(makeDiv);
-	$('items').style.display = "block";		
-	for(var i=0, len=localStorage.length; i<len; i++){
-		var makeLi = document.createElement('li');
-		var linksLi = document.createElement('li');
-		makeList.appendChild(makeLi);
-		var key = localStorage.key(i);
-		var value = localStorage.getItem(key);		
+//	var makeDiv = document.createElement('div');
+//	makeDiv.setAttribute("id", "items");
+	//var makeList = document.createElement('ul');
+//	makeDiv.appendChild(makeList);
+//	document.body.appendChild(makeDiv);
+//	$('items').style.display = "block";		
+//	for(var i=0, len=localStorage.length; i<len; i++){
+//		var makeLi = document.createElement('li');
+//		var linksLi = document.createElement('li');
+//		makeList.appendChild(makeLi);
+//		var key = localStorage.key(i);
+//		var value = localStorage.getItem(key);		
 		//Convert the string in local storage back into an object using JSON.parse method
-		var obj =JSON.parse(value);	
-		var makeSubList = document.createElement('ul');
-		makeLi.appendChild(makeSubList);
-		getImage(obj.occasions[1], makeSubList);
-		for(var n in obj){
-			var makeSubLi = document.createElement('li');
-			makeSubList.appendChild(makeSubLi);
-			var optSubText = obj[n][0]+" "+obj[n][1];
-			makeSubLi.innerHTML = optSubText;
-			makeSubList.appendChild(linksLi);
-			}
-			makeItemLinks(localStorage.key(i), linksLi);//Create edit and delete links for each list item in local storage
-		}
-	}
+//		var obj =JSON.parse(value);	
+//		var makeSubList = document.createElement('ul');
+//		makeLi.appendChild(makeSubList);
+//		getImage(obj.occasions[1], makeSubList);
+//		for(var n in obj){
+//			var makeSubLi = document.createElement('li');
+//			makeSubList.appendChild(makeSubLi);
+//			var optSubText = obj[n][0]+" "+obj[n][1];
+//			makeSubLi.innerHTML = optSubText;
+//			makeSubList.appendChild(linksLi);
+//			}
+//			makeItemLinks(localStorage.key(i), linksLi);//Create edit and delete links for each list item in local storage
+//		}
+//}
 	
-
 var storeData = function(key){
+
 		//If there is no key, generate a new key for the brand new item
 		if(!key){
 		var id 				= Math.floor(Math.random()*100000001);	
@@ -84,8 +82,9 @@ var storeData = function(key){
 			//This key is the same key that has been passed from the editSubmit event handler.
 			//to the validate function and then passed here to the saveData function.
 			id = key;
+			
 		}
-		
+
 		//Gather form field values and store in an object
 		//Object properties contain an array with the form label and input value
 		var item 				= {};
@@ -106,8 +105,8 @@ var storeData = function(key){
 		localStorage.setItem(id, JSON.stringify(item));		
 		alert("The Special Occasion is saved!");		
 	};
-
-	
+	//storeData(this.key)	
+				//console.log(this.key);	
 	
 	function deleteItem(){
 		var ask = confirm("Are you sure you want to delete this record?");
@@ -127,20 +126,22 @@ function clearLocal(){
 		}else{
 			localStorage.clear();
 			alert("All data is cleared.");
-			window.location.reload;
+			window.location.reload();
 			return false;
 		}		
 	}
-	
+		
 	
 	//Reset link to clear page		
-	Reset = function() {
-    var clearpage = $('#additem')[0].reset();
+	var Reset = function() {
+    var clearPage = $('#additem')[0].reset();
 };
 
+});
 
 
-	
+
+
 
 	
 

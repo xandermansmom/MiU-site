@@ -3,11 +3,41 @@ Mobile Interfaces and Usability
 CSS Document */
 @charset "UTF-8";
 
+.ui-body-a {
+}
 
-body {
-	background-color:#fff;	
+.ui-content-a{
+	background-color: #fff;
+}
+	
+#header img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:100px;
+	width: 300px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	}
 
+	#spend img, #occasions img, #sex img,
+	#states img, #lName img, #about img,
+	#contact img, #bronzeApp img, #bronzeGH img,
+	#goldGH img, #repo img, #hints img,
+	#rotatingImages img, #slider img, #newstream img,
+	#currentMonth img, #nextMonth img, #march img,
+	#april img, #may img, #june img, #july img, #august img,
+	#september img, #october img, #november img, #december img,
+	#nextYear img, #additem img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:100px;
+	width: 300px;
+	padding-bottom: 10px;
+	padding-top: 40px;
+	}
+	
 .red {	
 	color: #C33;
 	font-size: 36px;
@@ -24,18 +54,28 @@ body {
     left: 0;
 	height: 100px;
 	width:100px;
-	margin-left: 20px;
+	margin-left: 40px;
 	padding-right: 20px;
-	margin-top: 40px;
+	margin-top:145px;
 }
 
 h2.call {
 	position: relative;
-	font-size: 15px;
-	margin-top: 50px;
+	font-size: 12px;
+	margin-top: 10px;
 	color: #000;
-	padding-left: 25px;;
-	width: 180px;
+	padding-left: 30px;;
+	width: 120px;
+	}
+	
+.box { 
+	background-color:#e5e4ff;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 275px;
+	height: 120px;
+	border: 2px solid #56456e;
+	padding-bottom: 45px;	
 	}
 
 h1 { 
@@ -55,11 +95,10 @@ h2 {
 	color: #fff;
 	}
 	
-
 #add {
-  	position: relative;
+	position: relative;
 	margin-top: 25%;
-	margin-left: 150px;	
+	margin-left: 140px;	
 	}
 	
 li span {
@@ -85,7 +124,9 @@ li span {
 	
 .ui-li-icon {
 	max-height: 40px !important;
-	max-width: 40px !important
+	max-width: 40px !important;
+	margin-left: -10px!important;
+	margin-top: -40px!important;
 	}
 
 	

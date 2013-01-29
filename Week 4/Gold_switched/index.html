@@ -33,11 +33,11 @@
 
 </head>
 <body>
-<div data-role="page" id="home">
+<div data-role="page" id="home" data-theme="a">
 
 	<header>
-		<div data-role="header" data-position="fixed">
-			<h1>Special Occasion App</h1>
+		<div data-role="header" data-position="fixed" id="header">
+			<img src="images/logo.png" alt=" logo"/>
 		</div>
 	</header>
     
@@ -47,6 +47,8 @@
 		
     
 	<!--Call to Action-->
+    
+    <div class="box">
 	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
 		<div>			
         	<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
@@ -55,12 +57,12 @@
      		<img class="rotating-item" src="images/woman-and-buggie.gif"  alt="Baby Shower" />
        	   	<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
         </div>
-        
+      
         <div id="add">
         	<a href="#additem" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
   		</div>
-        <br/>
-        
+        </div>
+<br/><br/>        
 	<!--Drill down list-->
     
    <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
@@ -94,7 +96,8 @@
     </div>
         <div data-role="page" id="spend" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Spend</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Spend</h3>
         </div>
         
         <div data-role="content">
@@ -134,8 +137,9 @@
         
         <div data-role="page" id="occasions" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Occasion</h1>
-        </div>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Occasion</h3
+        ></div>
         
         <div data-role="content">
            <ul>
@@ -174,7 +178,8 @@
         
         <div data-role="page" id="sex" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Sex</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Sex</h3>
         </div>
         
         <div data-role="content">
@@ -215,7 +220,8 @@
         
         <div data-role="page" id="states" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>State</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>State</h3>
         </div>
         
         <div data-role="content">
@@ -254,7 +260,8 @@
         
         <div data-role="page" id="lName" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Last Name</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Last Name</h3>
         </div>
         
         <div data-role="content">   							
@@ -296,7 +303,8 @@
             <br/>
             <header>
 				<div data-role="header" data-position="fixed">
-					<h1>About</h1>
+                 <img src="images/logo.png" alt=" logo"/>
+					<h3>About</h3>
 				</div>
 			</header>
             
@@ -342,7 +350,8 @@
         
   		<div data-role="page" id="contact" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Info</h1>
+         <img src="images/logo.png" alt=" logo"/>
+        	<h3>Info</h3>
         </div>		 	
             				<ul>
                                	<li><span>Name:</span>  Michele Laramore</li>
@@ -354,14 +363,14 @@
                   <div class="ui-block-a">
                 		<div class="ui bar ui-bar-a">
                         	<a href="http://www.facebook.com/xandermansmom" target="_blank">Programmer</a>
-                        	<img src="images/me.gif" alt="Michele" height="75" width="75"/>
+                        	<img src="images/me.gif" alt="Michele" height="25" width="25"/>
              			</div>
               	  </div>
                
                   <div class="ui-block-b">
                   		<div class="ui bar ui-bar-a">
                   			<a href="http://www.fullsail.edu" target=_"blank">School</a>
-                        	<img src="images/fullsail.gif" alt="Full Sail University" height="75" width="75"/>
+                        	<img src="images/fullsail.gif" alt="Full Sail University" height="25" width="25"/>
                 	   </div>
                   </div>	
                </div>
@@ -370,14 +379,14 @@
                  	<div class="ui-block-a">
                	      	<div class="ui bar ui-bar-a">
                         	<a href="http://www.syntevo.com/smartgithg/index.html" target=_"blank">Uploader</a>
-                            <img src="images/smartgit.gif" alt="SmartGit" height="75" width="75"/>
+                            <img src="images/smartgit.gif" alt="SmartGit" height="25" width="25"/>
              		  </div>
                  </div>
              
                   <div class="ui-block-b">
                       <div class="ui bar ui-bar-a">
                       	<a href="http://www.github.com" target=_"blank">Repo</a>
-                        <img src="images/github.gif" alt="Github" height="75" width="75"/>
+                        <img src="images/github.gif" alt="Github" height="25" width="25"/>
              	      </div>
                   </div>	
                </div> 
@@ -396,9 +405,10 @@
      </div>
          <div data-role="page" id="bronzeApp" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Bronze App</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Bronze App</h3>
         </div>
-    			<p id="gApp"><a href="http://xandermansmom.github.com/MiU-site/Week%203/Bronze_switched/" target="_blank">Bronze App</a></p>
+    			<p id="gApp"><a href="" target="_blank">Bronze App</a></p>
         	  <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 
@@ -413,9 +423,10 @@
      </div> 	
         <div data-role="page" id="bronzeGH" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Bronze gh-pages</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Bronze gh-pages</h3>
             
-            		<p id="bronze"><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%203/Bronze_switched" target="_blank">Bronze gh-pages</a></p>
+            		<p id="bronze"><a href="" target="_blank">Bronze gh-pages</a></p>
         </div>
       </div>		 	             
            
@@ -433,10 +444,11 @@
         
         <div data-role="page" id="goldGH" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Gold gh-pages</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Gold gh-pages</h3>
         </div>	
         
-        		<p id="gold"><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%203/Gold_switched" target="_blank" >Gold gh-pages</a></p>	 	
+        		<p id="gold"><a href="" target="_blank" >Gold gh-pages</a></p>	 	
            
              <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -452,7 +464,8 @@
       </div> 
         <div data-role="page" id="repo" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Github Repo</h1>
+        <img src="images/logo.png" alt=" logo"/>   
+        	<h3>Github Repo</he>
         </div>
      	 	<p id="ghRepo"><a href="https://github.com/xandermansmom/MiU-site" target="_blank">Github Repo</a>
           
@@ -470,7 +483,8 @@
       </div> 
         <div data-role="page" id="hints" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Hints, Tips and Coding Advice</h1>
+         <img src="images/logo.png" alt=" logo"/>
+        	<h3>Hints, Tips and Coding Advice</h3>
         </div>	
         	 	
            					<ul>
@@ -494,7 +508,8 @@
 
         <div data-role="page" id="rotatingImages" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Rotating Images Code</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Rotating Images Code</h3>
         </div>		 	  
             				<ul>
                             	<li><span>Code Source:</span> TrendMedia Technologies, Inc., Brian McNitt.</li>
@@ -514,7 +529,8 @@
       </div> 
         <div data-role="page" id="slider" data-add-back-btn="true">
         <div data-role="header" data-position="fixed">
-        	<h1>Slider Code for Firefox</h1>
+        <img src="images/logo.png" alt=" logo"/>
+        	<h3>Slider Code for Firefox</h3>
         </div>		 	  
                 			<ul>
                     			<li><span>Code Source:</span> Frank Yan</li>
@@ -538,7 +554,8 @@
 		<div data-role="page" id="newstream" data-add-back-btn="true">
                    
 			<div data-role="header"  data-position="fixed">
-				<h1>Special Occasion App</h1>
+            <img src="images/logo.png" alt=" logo"/>
+
 			</div>
        <br/>    
        <ul data-role="listview" data-inset="true" data-filter="true" data-divider-theme="a" data-theme="a">
@@ -587,7 +604,8 @@
       
      <div data-role="page" id="currentMonth" data-add-back-btn="true">
      <div data-role="header" data-position="fixed">
-        <h1>Current Month</h1>
+     <img src="images/logo.png" alt=" logo"/>
+        <h3>Current Month</h3>
      </div>
            
         	<ul>
@@ -613,6 +631,7 @@
         
      <div data-role="page" id="nextMonth" data-add-back-btn="true">
      <div data-role="header" data-position="fixed">
+     <img src="images/logo.png" alt=" logo"/>
        	<h3>Next Month</h3>
      </div>   	
             <p id ="noOcc"> No occasions this month!</p>
@@ -632,6 +651,7 @@
 	
      <div data-role="page" id="march" data-add-back-btn="true">
      <div data-role="header" data-position="fixed">
+     <img src="images/logo.png" alt=" logo"/>
         <h3>March</h3>
      </div>
         
@@ -659,6 +679,7 @@
        
       <div data-role="page" id="april" data-add-back-btn="true">
       <div data-role="header" data-position="fixed">
+      <img src="images/logo.png" alt=" logo"/>
        	<h3>April</h3>
       </div>
      
@@ -679,6 +700,7 @@
      
 		<div data-role="page" id="may" data-add-back-btn="true">
     	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
 			<h3>May</h3>
         </div>      
         
@@ -724,6 +746,7 @@
         
          <div data-role="page" id="june" data-add-back-btn="true">
     	 <div data-role="header" data-position="fixed">
+         <img src="images/logo.png" alt=" logo"/>
        		<h3>June</h3>
          </div>
         	 <ul>
@@ -759,6 +782,7 @@
         
         <div data-role="page" id="july" data-add-back-btn="true">
      	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
        		<h3>July</h3>
         </div>
         
@@ -786,6 +810,7 @@
  
         <div data-role="page" id="august" data-add-back-btn="true">
      	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
        		<h3>August</h3>
         </div>
         
@@ -806,6 +831,7 @@
      
 	 <div data-role="page" id="september" data-add-back-btn="true">
      <div data-role="header" data-position="fixed">
+     <img src="images/logo.png" alt=" logo"/>
        	<h3>September</h3>
 	</div>
         
@@ -850,7 +876,8 @@
      </div>
         
         <div data-role="page" id="october" data-add-back-btn="true">
-     	<div data-role="header" data-position="fixed">      
+     	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
        		<h3>October</h3>
         </div>
         
@@ -905,6 +932,7 @@
         
          <div data-role="page" id="november" data-add-back-btn="true">
     	 <div data-role="header" data-position="fixed"> 
+         <img src="images/logo.png" alt=" logo"/>
        		<h3>November</h3>
          </div>
         		<ul>
@@ -931,6 +959,7 @@
         
         <div data-role="page" id="december" data-add-back-btn="true">
      	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
 			<h3>December</h3>
         </div>
         		<ul>
@@ -975,6 +1004,7 @@
 
 		<div data-role="page" id="nextYear" data-add-back-btn="true">
      	<div data-role="header" data-position="fixed">
+        <img src="images/logo.png" alt=" logo"/>
 		<h3>Next Year</h3>
         </div>
         		<ul>
@@ -1004,13 +1034,15 @@
  <div data-role="page" id="additem" data-add-back-btn="true">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Add Item</h1>
+    <img src="images/logo.png" alt=" logo"/>
+		<h3>Add Item</h3>
 	</div>
     
     <div data-role="content">     
     
   <form action="" method="post" id="additemform">
      <div data-role="fieldcontain">
+     
     	<p id="req">* The following form items are required</p>
     </div>
     		<div data-role="fieldcontain">
@@ -1146,7 +1178,7 @@
             </div>
             
             <div data-role="fieldcontain">	  	                
-               <input type="submit" value="Add Item" data-theme="a"/>
+               <input type="submit" value="Add Item" id ="save" data-theme="a"/>
 			</div>
            
             
