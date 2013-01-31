@@ -40,6 +40,7 @@
 
 	<header>
 		<div data-role="header"  data-position="fixed">
+            <img src="images/logo.png" alt=" logo"/>
 			<h1>Special Occasion App</h1>
 		</div>
 	</header>
@@ -50,7 +51,7 @@
    <form method ="get"  action= "">         
     
  	<!--Call to Action-->
-    
+    <div class="box">
     	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
 			<div>			
         		<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
@@ -59,11 +60,12 @@
      			<img class="rotating-item" src="images/woman-and-buggie.gif"  alt="Baby Shower" />
        	   		<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
         	</div>
-        
+       
         	<div id = "add">
             <a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
     		</div>
-    		<br />
+    </div>
+    <br/>
    <!-- List Inlay -->
         <div data-role="collapsible-set" data-collapsed="true" data-theme="a">
         <div data-role="listview" data-inset="true" data-filter="true"><br />
@@ -294,6 +296,7 @@
 			</div>
 		</header>
         
+        <div data-role="content">
 		<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a"> <br/>
         <div data-role="listview" data-inset="true" data-filter="true"><br />
 		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Occasions</div>
@@ -535,6 +538,7 @@
         		</ul>
           </div>
        </div>
+    </div>
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 

@@ -3,25 +3,27 @@ Mobile Interfaces and Usability
 CSS Document */
 @charset "UTF-8";
 
-.ui-body-a {
+.ui-page {
+	background: rgb(91,74,114); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(91,74,114,1) 0%, rgba(154,153,166,1) 43%, rgba(159,159,165,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(91,74,114,1)), color-stop(43%,rgba(154,153,166,1)), color-stop(100%,rgba(159,159,165,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b4a72', endColorstr='#9f9fa5',GradientType=0 ); /* IE6-9 */
 }
 
-.ui-content-a{
-	background-color: #fff;
-}
-	
-#header img{
+  #home img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	height:100px;
-	width: 300px;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	}
-
-	#spend img, #occasions img, #sex img,
-	#states img, #lName img, #about img,
+  	}
+	
+   #spend img, #occasions img, #sex img,
+	#states img, #lName img, *#about img,
 	#contact img, #bronzeApp img, #bronzeGH img,
 	#goldGH img, #repo img, #hints img,
 	#rotatingImages img, #slider img, #newstream img,
@@ -32,12 +34,44 @@ CSS Document */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	height:100px;
-	width: 300px;
 	padding-bottom: 10px;
 	padding-top: 40px;
 	}
 	
+#contact li, #hints li,
+#rotatingImages li, #slider li {
+	color: #fff;
+	}
+
+.ui-content li {
+	color: #fff;
+	}
+
+label.ui-input-text {
+	color: #fff;
+	}
+	
+a:link, a:active {
+	color: #e3e00e;
+	}
+	
+a[href^=tel] {
+	text-decoration: none;
+	color: #fff!important;
+	}
+
+a:visited {
+	color: #fff;
+	}
+
+a:hover{
+	color:#FFFF99;
+	}
+
+.ui-controlgroup-label {
+	color: #fff;
+	}
+
 .red {	
 	color: #C33;
 	font-size: 36px;
@@ -54,9 +88,9 @@ CSS Document */
     left: 0;
 	height: 100px;
 	width:100px;
-	margin-left: 40px;
+	padding-left: 30px;
 	padding-right: 20px;
-	margin-top:145px;
+	margin-top:120px;
 }
 
 h2.call {
@@ -67,9 +101,9 @@ h2.call {
 	padding-left: 30px;;
 	width: 120px;
 	}
-	
+		
 .box { 
-	background-color:#e5e4ff;
+	background-color:#CCCEE0;
 	margin-top: 20px;
 	margin-left: 20px;
 	width: 275px;
@@ -91,13 +125,17 @@ h2 {
 	 left: 35%;
 	}
 	
+h3 {
+	width: 175px;
+	}
+	
 .ui-title {
 	color: #fff;
 	}
 	
 #add {
 	position: relative;
-	margin-top: 25%;
+	margin-top: 210px
 	margin-left: 140px;	
 	}
 	
@@ -110,17 +148,16 @@ li span {
 	margin-left:-350px;	
 	}
 	
-.ui-bar .ui-bar-a .ui-header{
+.ui-bar .ui-header{
 	position: absolute;
  	margin-top:300px;
 	border-radius: 15px;
 	moz-border-radius: 15px;
 	}
-
+	
 .ui-collapsible-content li	{
 	color: #000;
 	}
-
 	
 .ui-li-icon {
 	max-height: 40px !important;
@@ -148,18 +185,19 @@ li span {
 	}
 
 p#noOcc, p#noOcc2, p#noOcc3 {
-	margin-top: -225px;
-	margin-left: -300px;
+	margin-top: -75px;
+	margin-left: -350px;
+	color: #fff;
 	}
 	
-p#gApp {
-	margin-top: -225px;
+p#bApp {
+	margin-top: -75px;
 	margin-left: -300px;
 	}
 	
 p#bronze, p#gold, p#ghRepo{
-	margin-top: -225px;
-	margin-left: -350px;
+	margin-top: -75px;
+	margin-left: -300px;
 	}
 
 p {
@@ -287,7 +325,7 @@ input:-ms-input-placeholder {
 
 
 #items  {
-	background: #fff;
+	background: #000;
 	float: left;
 	padding-top: 0;
 	}
@@ -369,7 +407,32 @@ input[type=button] {
 .ui-btn-text h3{
 	width: 300px;
 	}
+
+.ui-body label{
+		color: #fff;
+	}
+
+input#maxSpend.ui-input-text {
+	color: #fff;
+	}
+
+.ui-radio ui-btn-text {
+	color: #fff;
+	}
+
+.ui-btn-text {
+	color:#433555;
+	}
+
+span.ui-btn-text:visited {
+	color: #FFFF99;
+	}
+
+.ui-btn-down-a {
+	color: #79708a!important;
+	}
 	
+
 label.error {
 	display: block;
 	margin: 10px 0;
@@ -382,10 +445,10 @@ label.error {
 	
 p#req {
 	display: block;
-	margin-top: -275px;
+	margin-top: -300px;
 	padding: 5px 10px;
 	margin-left: -395px;
-	color: #0000;
+	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
 	}	
@@ -396,11 +459,12 @@ p#req {
 		text-align: center;
 	}
 	
+#reset a:link {
+	color: #FFFF99;
+	}
+	
 label.ui-input-text:first-child{
 	padding-top: 15px;
 	}
 	
-label.error {
-	
-	}
-	
+

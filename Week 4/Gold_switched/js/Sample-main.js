@@ -28,21 +28,21 @@ $('#additem').on('pageinit', function(){
 	});
 
 //Auto Populate Local Storage
-	//function autoFillData(){
+	function autoFillData(){
 		//The actual JSON OBJECT required for this to work is coming from our json.js file which is loaded from our HTML page.
 		//Store the JSON OBJECT in local storage.
-	//	for(var n in json){
-	//		var id = Math.floor(Math.random()*100000001);	
-	//			localStorage.setItem(id, JSON.stringify(json[n]));
-	//	}	
-	//}
+		for(var n in json){
+		var id = Math.floor(Math.random()*100000001);	
+				localStorage.setItem(id, JSON.stringify(json[n]));
+	}	
+	}
 
-//function getData(){
+function getData(){
 //		toggleControls("on");
-//		if(localStorage.length === 0){
-//		alert("There is no data in local storage so default data was added.");
-//		autoFillData();
-//		}	
+		if(localStorage.length === 0){
+		alert("There is no data in local storage so default data was added.");
+		autoFillData();
+		}	
 	//Write data from local storage to the browser		
 //	var makeDiv = document.createElement('div');
 //	makeDiv.setAttribute("id", "items");
@@ -69,20 +69,19 @@ $('#additem').on('pageinit', function(){
 //			makeSubList.appendChild(linksLi);
 //			}
 //			makeItemLinks(localStorage.key(i), linksLi);//Create edit and delete links for each list item in local storage
-//		}
+		}
 //}
 	
 var storeData = function(key){
-
+	var id;				
 		//If there is no key, generate a new key for the brand new item
 		if(!key){
-		var id 				= Math.floor(Math.random()*100000001);	
+			id =  Math.floor(Math.random()*100000001);
 		}else{
 			//Set the id to the existing key of the item we are editing so it replaces the existing data and doesn't create new data.
 			//This key is the same key that has been passed from the editSubmit event handler.
 			//to the validate function and then passed here to the saveData function.
-			id = key;
-			
+			id = key;			
 		}
 
 		//Gather form field values and store in an object

@@ -4,9 +4,31 @@ CSS Document */
 @charset "UTF-8";
 
 
-body {
-	background-color:#fff;	
+.ui-page {
+	background: rgb(91,74,114); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(91,74,114,1) 0%, rgba(154,153,166,1) 43%, rgba(159,159,165,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(91,74,114,1)), color-stop(43%,rgba(154,153,166,1)), color-stop(100%,rgba(159,159,165,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(91,74,114,1) 0%,rgba(154,153,166,1) 43%,rgba(159,159,165,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b4a72', endColorstr='#9f9fa5',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-content li {
+	font-color: #fff;
 	}
+
+.box { 
+	background-color:#CCCEE0;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 275px;
+	height: 120px;
+	border: 2px solid #56456e;
+	padding-bottom: 100px;	
+	}
+
 
 .red {	
 	color: #C33;
@@ -24,19 +46,18 @@ body {
     left: 0;
 	height: 100px;
 	width:100px;
-	margin-left: 20px;
+	padding-left: 50px;
 	padding-right: 20px;
-	margin-top: 70px;
+	margin-top:100px;
 }
 
 h2.call {
 	position: relative;
 	font-size: 15px;
-	margin-top: 40px;
+	margin-top: 20px;
 	color: #000;
 	padding-left: 25px;;
-	width: 180px;
-	}
+ 	width: 120px;	}
 
 h1 { 
 	color: #736389;
@@ -58,7 +79,6 @@ h2 {
 
 #add {
   	position: relative;
-	margin-top: 25%;
 	margin-left: 150px;	
 	}
 	
