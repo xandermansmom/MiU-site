@@ -135,12 +135,13 @@ h3 {
 	
 #add {
 	position: relative;
-	margin-top: 210px
+	margin-top: 210px;
 	margin-left: 140px;	
 	}
 	
 li span {
 	font-weight: bold;
+	color: #e3e00e;
 	}
 	
 .ui-input-text ui-body-c {

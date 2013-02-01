@@ -46,33 +46,38 @@
 	</header>
 
     
-	<div data-role="content">
+	
      <!--Filter Search-->
    <form method ="get"  action= "">         
     
  	<!--Call to Action-->
-    <div class="box">
-    	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2>
-			<div>			
+    <div class="box"><!--opening div for container box-->
+    
+    	<h2 class ="call"> Discover the convenience of tracking your special occasion with this app now!</h2><br>
+        
+			<div>	<!--Opening div for rotating images-->		
         		<img class="rotating-item" src="images/birthday-cake.gif" alt ="Birthday"   />
      			<img class="rotating-item" src="images/heart-w-rose.gif" alt="Anniversary" />
 				<img class="rotating-item" src="images/diploma.gif"  alt="Graduation"/>     
      			<img class="rotating-item" src="images/woman-and-buggie.gif"  alt="Baby Shower" />
        	   		<img class="rotating-item" src="images/xmas-tree.gif" height="250" width="200" alt="Christmas" />
-        	</div>
+        	</div><!--Closing div for rotating images-->
        
         	<div id = "add">
             <a href="additem.html" data-role="button" data-theme="a" data-ajax="false">Add Special Occasion</a>
-    		</div>
-    </div>
+    		</div><!--Closing div for add button-->
+
+    </div><!--Closing div for box-->
+
     <br/>
    <!-- List Inlay -->
+   	<div data-role="content">
         <div data-role="collapsible-set" data-collapsed="true" data-theme="a">
         <div data-role="listview" data-inset="true" data-filter="true"><br />
 		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Browse Categories </div> 
-		<div data-role="collapsible" data-collapsed="true"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
-		
         
+		<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+
             <h3>Browse by Spend</h3>
             				<ul>
                                		<li> <img src="images/spend.gif" alt = "spend" class ="ui-li-icon"/></li>
@@ -92,7 +97,7 @@
 									<li>Occasion: Birthday</li>          
                                 	<li>Date: 07/06/1982</li>
                                </ul>
-         </div>
+         </div><!--Closing div for Spend-->
          
          <div data-role="collapsible" data-collapsed="true" data-filter="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a">
 
@@ -116,7 +121,7 @@
                                 	<li>Spend: $50</li>
                                 </ul>
 						
-		</div>
+		</div><!--Closing div for Occasion-->
         
         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
 			<h3>Browse by Sex</h3>
@@ -141,7 +146,7 @@
                                 	<li>Spend: $50</li>
                                </ul>
 			
-		</div>
+		</div><!--Closing div for sex-->
         
        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
 			<h3>Browse by State</h3>
@@ -164,7 +169,7 @@
 									<li>Occasion: Birthday</li>          
                                 	<li>Date: 10/11/2012</li>
                                </ul>
-		</div>
+		</div><!--Closing div for State-->
         
         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" data-theme="a" >
 			<h3>Browse by Last Name</h3>
@@ -188,9 +193,13 @@
                                 	<li>Date: 10/18/1946</li>
                                 	<li>Spend: $100</li>
                                </ul> 
-                    </div>       
-          	</div>  
-      </div>
+        </div>  <!--Closing div for Last Name-->  
+
+        </div><!--Closing div for listview-->   
+     </div><!--Closing div for collapsible set-->
+     
+   
+   
 
      <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
@@ -201,21 +210,25 @@
 					<li><a href="#about" data-icon="info">About</a></li>
 					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
 				</ul>
-			</div>
-		</div>
+			</div><!--Closing div navbar-->
+		</div><!--Closing div for footer-->
      </form>
-   </div> 
-</div>  
+   </div> <!--Closing div content-->
+</div>  <!--Closing div Home page-->
+
         <!--About Page-->
 			<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
             
             <header>
 				<div data-role="header" data-position="fixed">
-					<h1>Special Occasion App</h1>
+                  <img src="images/logo.png" alt=" logo"/>
+
+					<h3>About</h3>
 			</div>
 			</header>
+      <div data-role="content">
             
-			<div data-role="collapsible-set" data-collapsed="true" data-theme="a"><br />
+			<div data-role="collapsible-set" data-collapsed="true" data-theme="a" data-add-back-btn="true" ><br />
             <div data-role="listview" data-inset="true" data-filter="true"><br />
 			<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">About</div>
             
@@ -228,18 +241,18 @@
             					<li><span>Phone:</span> (254) 366-0084</li>
                            </ul>    
               
-           </div>
- 
-            <div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Credit</div>
+           </div><!--Closing div Info-->
+			<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Credit</div>
            <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
 
-           		<h3>Hints, Tips, and Coding Advice</h3>
+           		<h3>Hints, Tips and Advice</h3>
            					<ul>
                     		   <li><span>Instructor:</span> Mrs. Robin Alarcon</li>
                                <li><span>Coding Buddy:</span> Josh Wilcox</li>
                                <li><span>Online Assistance:</span><br/> FSO MDVBS Facebook Group</li>
+                               <li><span>Google+ Hangouts:</span><br/>
                             </ul>
-			</div>
+			</div><!--Closing div Hints, Tips and Advice-->
                      
            
          	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
@@ -248,28 +261,29 @@
                             	<li><span>Code Source:</span> TrendMedia Technologies, Inc., Brian McNitt.</li>
                                 <li><span>Website:</span> <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/" target=		                                 "_blank">Trendmedia</a></li>
                            	</ul>
-       		</div>
+       		</div><!--Closing div Rotating Images-->
           
         	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
-	  			<h3>HTML5 Slider Code for for Firefox</h3>
+	  			<h3>HTML5 Slider Code</h3>
                 			<ul>
                     			<li><span>Code Source:</span> Frank Yan</li>
                     			<li><span>Website:</span> <a href="https://github.com/fryn/html5slider" target="_blank">Frank Yan's Github HTML5 Slider                                 Source Code</a></li>
                             </ul>                   
-				</div>
-            <div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Github</div>
+				</div><!--Closing Div Slider Code-->
+			<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Github</div>
+
         	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
         		<h3>Github Links</h3>
                 		<ul>
-                			<li><a href="http://xandermansmom.github.com/MiU-site/Week%203/Gold_switched/" target="_blank">Gold App</a></li>               
-							<li><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%203/Bronze_switched" target="_blank">
+                			<li><a href="http://xandermansmom.github.com/MiU-site/Week%204/Gold_switched/" target="_blank">Gold App</a></li>               
+							<li><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%204/Bronze_switched"  target="_blank">
                             Bronze gh-page</a></li>               				
-                            <li><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%203/Gold_switched" target="_blank">
+                            <li><a href="https://github.com/xandermansmom/MiU-site/tree/gh-pages/Week%204/Gold_switched" target="_blank">
                             Gold gh-pages</a></li>
  	              			<li><a href="https://github.com/xandermansmom/MiU-site" target="_blank">Github Repo</a></li>
                        </ul>
-       		</div>
-        </div>
+       		</div><!--Closing div Github Links-->
+     
 
 
         <!--footer-->
@@ -281,10 +295,13 @@
 					<li><a href="#about" data-icon="info">About</a></li>
 					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
 				</ul>
-			</div>
-		</div>
-     </div>
-  </div>
+			</div><!--Closing div navbar-->
+		</div><!--Closing div footer-->
+     </div><!--Closing div listview-->
+  </div><!--Closing div collapsible set -->
+</div><!--Closing div content-->
+</div><!--Closing div about page-->
+
 		
         
         <!--Newstream Page-->
@@ -292,17 +309,19 @@
         
         <header>
 			<div data-role="header"  data-position="fixed">
-				<h1>Special Occasion App</h1>
+            <img src="images/logo.png" alt=" logo"/>
+
+				<h3>Newstream</h3>
 			</div>
 		</header>
         
-        <div data-role="content">
+    <div data-role="content">
 		<div data-role="collapsible-set" data-collapsed="true" data-filter="true" data-theme="a"> <br/>
         <div data-role="listview" data-inset="true" data-filter="true"><br />
 		<div class="ui-bar ui-bar-a" data-role="header" data-theme="a">Occasions</div>
         
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
         <h3>Current Month</h3>
        	
         
@@ -314,14 +333,14 @@
             	<li> <span>Last Name:</span> Houston</li>
             	<li> <span>State:</span> Kentucky</li>
         	</ul>
-         </div>
+         </div><!--Closing div Current Month-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>Next Month</h3>   	
-            <p> No occasions this month!</p>
-		</div>
+            <p id="noOcc"> No occasions this month!</p>
+		</div><!--Closing div Next Month-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
         <h3>March</h3>
         
         	<ul>
@@ -332,15 +351,15 @@
             	<li> <span>Last Name:</span>McDaniel</li>
             	<li> <span>State:</span>Texas </li>
         	</ul>
-          </div>
+          </div><!--Closing div March-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>April</h3>
      
-       	<p> No occasions this month!</p>
-        </div>
+       	<p id="noOcc2"> No occasions this month!</p>
+        </div><!--closing div April-->
 
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
 		<h3>May</h3>       
         
         	<ul>
@@ -368,9 +387,9 @@
             	<li> <span>Last Name:</span>Knight</li>
             	<li> <span>State:</span>California</li>
         	</ul>
-         </div>
+         </div><!--Closing div May-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>June</h3>
         	 <ul>
              	<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
@@ -390,9 +409,9 @@
             	<li> <span>State:</span>Michigan</li>
         	</ul>
         		
-        </div>
+        </div><!--Closing div June-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>July</h3>
         
         		<ul>
@@ -403,15 +422,15 @@
             		<li> <span>:ast Name:</span>Side</li>
             		<li> <span>State:</span>Arizona</li>
         	</ul>
-        </div>
+        </div><!--Closing div July-->
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>August</h3>
         
-        			<p> No occasions this month!</p>
-        </div>
+        			<p id="noOcc3"> No occasions this month!</p>
+        </div><!--Closing div August-->
 
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>September</h3>
         
         		<ul>
@@ -441,9 +460,9 @@
             		<li> <span>State:</span>Texas</li>
         		</ul>
         
-        </div>
+        </div><!--Closing div September-->
         
-       	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+       	<div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
        	<h3>October</h3>
         
         		 <ul>
@@ -456,7 +475,7 @@
         		</ul>
                 
                  <ul>
-                    <li><img src="images/Baby_Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
+                    <li><img src="images/Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
         			<li> <span>Date:</span>10/11/2013</li>
             		<li> <span>Occasion:</span>Baby Shower</li>
             		<li> <span>Spend:</span> $100</li>
@@ -481,9 +500,9 @@
             		<li> <span>Last Name:</span>McPhalen</li>
             		<li> <span>State:</span>Texas</li>
         		</ul>
-        </div>
+        </div><!--Closing div October-->
           
-         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">      		
+         <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">      		
        	<h3>November</h3>
         		<ul>
         			<li><img src="images/Birthday.png" alt="birthday" class ="ui-li-icon"/></li>
@@ -493,13 +512,13 @@
             		<li> <span>Last Name:</span>Cruz</li>
             		<li> <span>State:</span>California</li>
         		</ul>
-        </div>
+        </div><!--Closing div November-->
         
         
-        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+        <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
 		<h3>December</h3>
         		<ul>
-         			<li><img src="images/Baby_Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
+         			<li><img src="images/Shower.png" alt="baby shower" class ="ui-li-icon"/></li>
         			<li> <span>Date:</span>12/10/2013</li>
             		<li> <span>Occasion:</span>Baby Shower</li>
             		<li> <span>Spend:</span> $15</li>
@@ -524,9 +543,9 @@
             		<li> <span>Last Name:</span>Reese</li>
             		<li> <span>State:</span>California</li>
         		</ul>
-        </div>
+        </div><!--Closing div December-->
 
-         <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
+         <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left">
 		<h3>Next Year</h3>
         		<ul>
          			<li><img src="images/Graduation.png" alt="graduation" class ="ui-li-icon"/></li>
@@ -536,9 +555,10 @@
             		<li> <span>Last Name:</span>McPhalen</li>
             		<li> <span>State:</span>Texas</li>
         		</ul>
-          </div>
-       </div>
-    </div>
+          </div><!--Closing div Next year-->
+
+    
+
         <!--footer-->
 		<div data-role="footer" data-position="fixed" data-theme="a" >
 
@@ -548,10 +568,13 @@
 					<li><a href="#about" data-icon="info">About</a></li>
 					<li><a href="#newstream" data-icon="grid">Newstream</a></li>
 				</ul>
-			</div> 
-         </div> 
-	</div>
- </div>
+			</div> <!--Closing navbar div-->
+      </div> <!--Closing footer div-->
+  </div><!--Closing div listview-->
+	</div><!--Closing div collapsible set -->
+</div><!--Closing div content-->
+</div><!--Closing div Newstream page-->
+
 
 	
 <!--Javascript sources-->
